@@ -2,4 +2,4 @@
 
 Git Repository for Front End Web Project.
 
-Using HTML5/CSS3/Javascript
+Using HTML5,CSS3 & Javascript
