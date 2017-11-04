@@ -1,5 +1,8 @@
 body {
     background: #000000 url(image/back.jpg);
+    max-width: 1500px;
+    min-width: 500px;
+    margin: auto;
 }
 
 nav {
