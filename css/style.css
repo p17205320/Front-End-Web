@@ -1,3 +1,24 @@
 body {
     background: #000000 url(image/back.jpg);
 }
+
+nav {
+    text-align: center;
+    background: #3e813e
+}
+
+header, footer {
+    background: red;
+    text-align: center;
+}
+header > h1 {
+    margin: 0;
+}
+nav > a {
+    text-decoration: none;
+    color: white;
+}
+
+main {
+    background: white;
+}
