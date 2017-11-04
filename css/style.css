@@ -7,15 +7,32 @@ body {
 
 nav {
     text-align: center;
-    background: #3e813e
+    background: #3e813e;
+    border: white solid;
+    border-width: 0px 1px 1px 1px;
+    border-radius: 0px 0px 10px 10px;
 }
 
 header, footer {
     background: red;
     text-align: center;
 }
+
+header {
+    border: white solid;
+    border-width: 0px 1px 0px 1px;
+}
 header > h1 {
     margin: 0;
+
+}
+
+h1 {
+    font-family: 'Arvo', serif;
+}
+
+p, a {
+    font-family: 'Lato', sans-serif;
 }
 nav > a {
     text-decoration: none;
