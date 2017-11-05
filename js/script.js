@@ -4,9 +4,15 @@
   let subMenu = document.getElementById("submenu");
   console.log(subMenu);
 function subMenuAnimate() {
-  subMenu.style.display = "Block";
-}
-mainMenu.addEventListener("click", subMenuAnimate);
+  let test = this.getAttribute("menuItem");
 
+}
+mainMenu.addEventListener("click",  function(e)
+{
+  if (e.target.dataset.menuitem === "prevWork") {
+    subMenu.innerHTML = "<a href = '#'> Previous Work</a>"
+  }
+  subMenu.style.display = "Block";
+});
 
 }());
