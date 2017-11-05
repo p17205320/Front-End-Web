@@ -13,6 +13,12 @@ nav {
     border-radius: 0px 0px 10px 10px;
 }
 
+
+#submenu {
+    display:none;
+    overflow: hidden;
+    transition: height 0.5s;
+}
 header, footer {
     background: red;
     text-align: center;
