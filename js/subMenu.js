@@ -16,7 +16,7 @@ mainMenu.addEventListener("click",  function(e)
   } else {
 
   }
-  subMenu.animate({ transform: [ 'scaleY(0)', 'scaleY(1)' ] },
+  subMenu.animate({ transform: [ 'scaleX(0)', 'scaleX(1)' ] },
       { duration: 100, iterations: 1 });
   subMenu.style.display = "Block";
 

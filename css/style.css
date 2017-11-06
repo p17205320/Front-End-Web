@@ -1,7 +1,4 @@
-@keyframes subMenuAnimate {
-    from {height: 0}
-    to {height: auto;}
-}
+
 
 body {
     background:
@@ -19,9 +16,6 @@ body {
 nav {
     text-align: center;
     background: #0D4D4D;
-    border: white solid;
-    border-width: 0px 1px 1px 1px;
-
 }
 
 
@@ -37,10 +31,7 @@ header, footer {
     text-align: center;
 }
 
-header {
-    border: white solid;
-    border-width: 0px 1px 0px 1px;
-}
+
 header > h1 {
     margin: 0;
 
@@ -73,7 +64,7 @@ nav > a {
 #mainmenu td {
     display: block;
     padding: 1em 0em 1em;
-    border: 2px white outset;
+    border: 1px white solid;
     text-decoration: none;
     cursor: pointer;
 
