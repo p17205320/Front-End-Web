@@ -77,13 +77,20 @@ nav > a {
     border: 5px white outset;
     text-decoration: none;
     cursor: pointer;
+
 }
 
-@media only screen and (min-width: 1000px) {
+
+@media only screen and (min-width: 1110px) {
     #mainmenu td {
         display: table-cell;
         padding: 0em 0em 0em;
+        width: 33.3%
     }
+    #submenu td {
+        width: 25%
+    }
+
 }
 main {
     background: white;
