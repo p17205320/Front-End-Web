@@ -18,10 +18,9 @@ body {
 
 nav {
     text-align: center;
-    background: #3e813e;
+    background: #0D4D4D;
     border: white solid;
     border-width: 0px 1px 1px 1px;
-    border-radius: 0px 0px 10px 10px;
 
 }
 
@@ -29,12 +28,12 @@ nav {
 #submenu {
     display: none;
     overflow: hidden;
-    background: #5f816f;
+    background: #226666;
     border-radius: 0px 0px 10px 10px;
 
 }
 header, footer {
-    background: red;
+    background: #2D882D;
     text-align: center;
 }
 
