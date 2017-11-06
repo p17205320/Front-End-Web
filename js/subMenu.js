@@ -8,10 +8,10 @@ mainMenu.addEventListener("click",  function(e)
 {
   subMenu.innerHTML = "";
   if (e.target.dataset.menuitem === "prevWork") {
-    subMenu.innerHTML = "<a href = '#'> Level 2 Interactive Media</a>" +
-        "<a href = '#'> Level 3 Interactive Media</a>" +
-        "<a href = '#'> Level 3 IT</a>" +
-        "<a href = '#'> HND Computing</a>"
+    subMenu.innerHTML = "<table> <tr> <td> <a href = '#'> Level 2 Interactive Media</a></td>" +
+        "<td><a href = '#'> Level 3 Interactive Media</a></td>" +
+        "<td><a href = '#'> Level 3 IT</a></td>" +
+        "<td><a href = '#'> HND Computing</a></td></tr></table>"
 
   } else {
 

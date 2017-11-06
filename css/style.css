@@ -22,6 +22,7 @@ nav {
     border: white solid;
     border-width: 0px 1px 1px 1px;
     border-radius: 0px 0px 10px 10px;
+
 }
 
 
@@ -53,13 +54,37 @@ h1 {
 p, a {
     font-family: 'Lato', sans-serif;
 }
-nav > a, #submenu > a {
+nav > a {
     text-decoration: none;
     color: white;
     padding: 1em;
+    font-size: 1.5em;
 }
 
+#mainmenu a {
+    color: white;
+    font-size: 1.5em;
+    text-decoration: none;
+}
 
+#mainmenu table {
+    width: 100%;
+
+}
+#mainmenu td {
+    display: block;
+    padding: 1em 0em 1em;
+    border: 5px white outset;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+@media only screen and (min-width: 1000px) {
+    #mainmenu td {
+        display: table-cell;
+        padding: 0em 0em 0em;
+    }
+}
 main {
     background: white;
 }
