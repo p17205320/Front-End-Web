@@ -1,93 +1,95 @@
 
 
 body {
-    background:
-            radial-gradient(black 15%, transparent 16%) 0 0,
-            radial-gradient(black 15%, transparent 16%) 8px 8px,
-            radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 0 1px,
-            radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 8px 9px;
-    background-color:#282828;
-    background-size:16px 16px;
-    max-width: 1500px;
-    min-width: 500px;
-    margin: auto;
+  background: radial-gradient(black 15%, transparent 16%) 0 0, radial-gradient(black 15%, transparent 16%) 8px 8px,
+  radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 0 1px,
+  radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 8px 9px;
+  background-color:#282828;
+  background-size:16px 16px;
+  max-width: 1500px;
+  min-width: 500px;
+  margin: auto;
 }
 
 nav {
-    text-align: center;
-    background: #0D4D4D;
+  text-align: center;
+  background: #0D4D4D;
 }
 
 
 #submenu {
-    display: none;
-    overflow: hidden;
-    background: #226666;
-    border-radius: 0px 0px 10px 10px;
+  display: none;
+  overflow: hidden;
+  background: #226666;
+  border-radius: 0px 0px 10px 10px;
 
 }
 header, footer {
-    background: #2D882D;
-    text-align: center;
+  background: #2D882D;
+  text-align: center;
 }
 
 
 header > h1 {
-    margin: 0;
+  margin: 0;
 
 }
 
 h1 {
-    font-family: 'Arvo', serif;
+  font-family: 'Arvo', serif;
 }
 
-p, a, #mainmenu {
-    font-family: 'Lato', sans-serif;
+#mainmenu, #maincontent {
+  font-family: 'Lato', sans-serif;
 }
 nav > a {
-    text-decoration: none;
-    color: white;
-    padding: 1em;
-    font-size: 1.5em;
+  text-decoration: none;
+  color: white;
+  padding: 1em;
+  font-size: 1.5em;
 }
 
 #mainmenu {
-    color: white;
-    font-size: 1.5em;
-    text-decoration: none;
+  color: white;
+  font-size: 1.5em;
+  text-decoration: none;
 }
 
 #mainmenu td:hover {
-    background: #7A9F35;
+  background: #7A9F35;
 }
 
 #mainmenu table {
-    width: 100%;
+  width: 100%;
 
 }
 #mainmenu td {
-    display: block;
-    padding: 1em 0em 1em;
-    border: 1px white solid;
-    text-decoration: none;
-    cursor: pointer;
-    transition: background 0.2s ease-in-out;
+  display: block;
+  padding: 1em 0em 1em;
+  border: 1px white solid;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background 0.2s ease-in-out;
 
 }
 
 
 @media only screen and (min-width: 1110px) {
-    #mainmenu td {
-        display: table-cell;
-        padding: 0em 0em 0em;
-        width: 33.3%
-    }
-    #submenu td {
-        width: 25%
-    }
+  #mainmenu td {
+    display: table-cell;
+    padding: 0em 0em 0em;
+    width: 33.3%
+  }
+  #submenu td {
+    width: 25%
+  }
 
 }
 main {
-    background: white;
+  background: white;
 
+}
+
+main img {
+  max-width: 100%;
 }
