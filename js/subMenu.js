@@ -3,7 +3,7 @@
   console.log(mainMenu);
   let subMenu = document.getElementById("submenu");
   console.log(subMenu);
-
+  let mainContent = document.getElementById("maincontent");
 mainMenu.addEventListener("click",  function(e)
 {
   subMenu.innerHTML = "";
@@ -13,11 +13,14 @@ mainMenu.addEventListener("click",  function(e)
         "<td href = '#'> Level 3 IT</td>" +
         "<td href = '#'> HND Computing</td></tr></table>"
 
+  } else if (e.target.dataset.menuitem === "aboutMe") {
+    mainContent.animate([ { opacity: 1 }, { opacity: 0 } ], 500);
+        mainContent.innerHTML = "<p>Testing testing 123</p>"
+    mainContent.animate([ { opacity: 0 }, { opacity: 1 } ], 500);
   } else {
 
   }
-  subMenu.animate({ transform: [ 'scaleX(0)', 'scaleX(1)' ] },
-      { duration: 100, iterations: 1 });
+  subMenu.animate([ { opacity: 0 }, { opacity: 1 } ], 500);
   subMenu.style.display = "Block";
 
 });
