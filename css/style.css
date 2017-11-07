@@ -94,3 +94,7 @@ main {
 main img {
   max-width: 100%;
 }
+
+#maincontent figcaption {
+  font-style: italic;
+}
