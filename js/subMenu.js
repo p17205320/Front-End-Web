@@ -51,6 +51,7 @@
           "    </tr>\n" +
           "  </table>\n" +
           "</div>";
+      let mainButton = document.getElementsByClassName("mainButton");
       mainContent.animate([ { opacity: 0 }, { opacity: 1 } ], 500);
     }else if (e.target.dataset.menuitem === "level3IT") {
       mainContent.animate([ { opacity: 1 }, { opacity: 0 } ], 500);
@@ -92,6 +93,7 @@
           "    </tr>\n" +
           "  </table>\n" +
           "</div>";
+      let mainButton = document.getElementsByClassName("mainButton");
       mainContent.animate([ { opacity: 0 }, { opacity: 1 } ], 500);
     }else if (e.target.dataset.menuitem === "HNDIT") {
       mainContent.animate([ { opacity: 1 }, { opacity: 0 } ], 500);
@@ -133,6 +135,7 @@
           "    </tr>\n" +
           "  </table>\n" +
           "</div>";
+      let mainButton = document.getElementsByClassName("mainButton");
       mainContent.animate([ { opacity: 0 }, { opacity: 1 } ], 500);
     }else if (e.target.dataset.menuitem === "other") {
       mainContent.animate([ { opacity: 1 }, { opacity: 0 } ], 500);
@@ -150,8 +153,66 @@
           "    </tr>\n" +
           "  </table>\n" +
           "</div>";
+      let mainButton = document.getElementsByClassName("mainButton");
+      console.log(mainButton);
       mainContent.animate([ { opacity: 0 }, { opacity: 1 } ], 500);
     } else {
     }
+
+
+
+
+
+    });
+  mainButton.addEventListener("click",  function(e) {
+    if (e.target.dataset.button === "none") {
+      mainContent.animate([ { opacity: 1 }, { opacity: 0 } ], 500);
+      mainContent.innerHTML = "";
+      mainContent.animate([ { opacity: 0 }, { opacity: 1 } ], 500);
+    } else if (e.target.dataset.button === "robotsTrip") {
+      mainContent.animate([ { opacity: 1 }, { opacity: 0 } ], 500);
+      mainContent.innerHTML = "";
+      mainContent.animate([ { opacity: 0 }, { opacity: 1 } ], 500);
+    } else if (e.target.dataset.button === "battleship") {
+      mainContent.animate([ { opacity: 1 }, { opacity: 0 } ], 500);
+      mainContent.innerHTML = "";
+      mainContent.animate([ { opacity: 0 }, { opacity: 1 } ], 500);
+    } else if (e.target.dataset.button === "monsta") {
+      mainContent.animate([ { opacity: 1 }, { opacity: 0 } ], 500);
+      mainContent.innerHTML = "";
+      mainContent.animate([ { opacity: 0 }, { opacity: 1 } ], 500);
+    } else if (e.target.dataset.button === "ncsVideo") {
+      mainContent.animate([ { opacity: 1 }, { opacity: 0 } ], 500);
+      mainContent.innerHTML = "";
+      mainContent.animate([ { opacity: 0 }, { opacity: 1 } ], 500);
+    } else if (e.target.dataset.button === "stoningCyprus") {
+      mainContent.animate([ { opacity: 1 }, { opacity: 0 } ], 500);
+      mainContent.innerHTML = "";
+      mainContent.animate([ { opacity: 0 }, { opacity: 1 } ], 500);
+    } else if (e.target.dataset.button === "cicVideo") {
+      mainContent.animate([ { opacity: 1 }, { opacity: 0 } ], 500);
+      mainContent.innerHTML = "";
+      mainContent.animate([ { opacity: 0 }, { opacity: 1 } ], 500);
+    } else if (e.target.dataset.button === "stamfordVideo") {
+      mainContent.animate([ { opacity: 1 }, { opacity: 0 } ], 500);
+      mainContent.innerHTML = "";
+      mainContent.animate([ { opacity: 0 }, { opacity: 1 } ], 500);
+    } else if (e.target.dataset.button === "snek") {
+      mainContent.animate([ { opacity: 1 }, { opacity: 0 } ], 500);
+      mainContent.innerHTML = "";
+      mainContent.animate([ { opacity: 0 }, { opacity: 1 } ], 500);
+    } else if (e.target.dataset.button === "xonarSystems") {
+      mainContent.animate([ { opacity: 1 }, { opacity: 0 } ], 500);
+      mainContent.innerHTML = "";
+      mainContent.animate([ { opacity: 0 }, { opacity: 1 } ], 500);
+    } else if (e.target.dataset.button === "grantham") {
+      mainContent.animate([ { opacity: 1 }, { opacity: 0 } ], 500);
+      mainContent.innerHTML = "";
+      mainContent.animate([ { opacity: 0 }, { opacity: 1 } ], 500);
+    }
+    else {
+
+    }
+
   });
 }());
