@@ -104,14 +104,17 @@ main img {
   margin: auto;
 }
 
-#mainButtonContain table {
+main table {
   width: 50%;
   margin: auto;
   border-spacing: 0;
 }
 
-#mainButtonContain h1, h2 {
+main h1, h2 {
   text-align: center;
+}
+#mainButtonContain1, #mainButtonContain2, #mainButtonContain3, #mainButtonContain4 {
+  display: none;
 }
 .mainButton img {
   filter: grayscale(100%);
@@ -148,4 +151,8 @@ main img {
 .mainButton:hover td:nth-child(2) {
   border: 15px solid #7A9F35;
   border-left-width: 0px;
+}
+
+video {
+  width: 100%;
 }
