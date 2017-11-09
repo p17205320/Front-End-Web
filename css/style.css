@@ -100,16 +100,49 @@ main img {
 }
 .mainButton {
   cursor: pointer;
+  width: 75%;
+  margin: auto;
+}
+
+#mainButtonContain table {
+  width: 50%;
+  margin: auto;
+  border-spacing: 0;
 }
 .mainButton img {
-  height: 100px;
+  height: 200px;
+  width: auto;
   filter: grayscale(100%);
   transform: rotate(15deg);
   transition: filter 0.5s ease;
-  transition: transform 0.5s ease;
+  transition: transform 0.5s cubic-bezier(0.25, 0.1, 0.54, 2.15);
+  border-radius: 100px;
 }
 
 .mainButton:hover img {
   filter: grayscale(0%);
   transform: rotate(0deg);
+}
+.mainButton > td:nth-child(1) {
+  border: 5px solid black;
+  border-right-width: 0px;
+  border-bottom-left-radius: 200px;
+  border-top-left-radius: 192px;
+  transition: border 0.5s ease;
+}
+
+.mainButton > td:nth-child(2) {
+  border: 5px solid black;
+  border-left-width: 0px;
+  transition: border 0.5s ease;
+}
+
+.mainButton:hover td:nth-child(1) {
+  border: 15px solid #7A9F35;
+  border-right-width: 0px;
+}
+
+.mainButton:hover td:nth-child(2) {
+  border: 15px solid #7A9F35;
+  border-left-width: 0px;
 }
