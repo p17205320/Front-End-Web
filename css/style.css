@@ -109,6 +109,10 @@ main img {
   margin: auto;
   border-spacing: 0;
 }
+
+#mainButtonContain h1, h2 {
+  text-align: center;
+}
 .mainButton img {
   height: 200px;
   width: auto;
