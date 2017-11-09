@@ -81,7 +81,7 @@ nav > a {
     width: 33.3%
   }
   #subMenu td {
-    width: 33%
+    width: 25%
   }
 
 }
@@ -114,8 +114,6 @@ main img {
   text-align: center;
 }
 .mainButton img {
-  height: 200px;
-  width: auto;
   filter: grayscale(100%);
   transform: rotate(15deg);
   transition: filter 0.5s ease;
@@ -133,6 +131,7 @@ main img {
   border-bottom-left-radius: 200px;
   border-top-left-radius: 192px;
   transition: border 0.5s ease;
+  width: 200px;
 }
 
 .mainButton > td:nth-child(2) {
