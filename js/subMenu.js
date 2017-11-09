@@ -88,9 +88,22 @@
       if (e.target.dataset.button === "none") {
         mainContent.animate([ { opacity: 1 }, { opacity: 0 } ], 500);
         hideAll();
-        pageLoadContent.innerHTML = "<video>\n" +
+        pageLoadContent.innerHTML = "<h1>NONE</h1>\n" +
+            "<video controls>\n" +
             "  <source src=\"Media/Level_3_Interactive_Media/Video/None.webm\">\n" +
-            "</video>";
+            "</video>\n" +
+            "\n" +
+            "<ul>\n" +
+            "  <li>Called \"None\" because i had no idea what to call it</li>\n" +
+            "  <li>\"Animated\" in a single day</li>\n" +
+            "  <li>Originally was much longer but cut down to final act due to time (Full Script <a href = \"Media/Level_3_Interactive_Media/Docs/None_Script.pdf\"> Here</a>)</li>\n" +
+            "  <li>Inspired by <a href = \"http://store.steampowered.com/app/57300/Amnesia_The_Dark_Descent/\">Amnesia: The Dark Descent</a></li>\n" +
+            "  <li>Well, <i>heavily</i> inspired. Sound effects, music and monster design all <del>Ripped Off</del> used for inspiration</li>\n" +
+            "  <figure>\n" +
+            "    <img src=\"Media/Level_3_Interactive_Media/Image/none/1.jpg\" alt =\"Spitting Image\">\n" +
+            "    <figcaption>Spitting Image i'd say</figcaption>\n" +
+            "  </figure>\n" +
+            "</ul>";
         mainContent.animate([ { opacity: 0 }, { opacity: 1 } ], 500);
       } else if (e.target.dataset.button === "robotsTrip") {
         mainContent.animate([ { opacity: 1 }, { opacity: 0 } ], 500);
