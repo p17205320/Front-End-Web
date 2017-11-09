@@ -1,9 +1,9 @@
 (function(){
-  let mainMenu = document.getElementById("mainmenu");
+  let mainMenu = document.getElementById("mainMenu");
   console.log(mainMenu);
-  let subMenu = document.getElementById("submenu");
+  let subMenu = document.getElementById("subMenu");
   console.log(subMenu);
-  let mainContent = document.getElementById("maincontent");
+  let mainContent = document.getElementById("mainContent");
 mainMenu.addEventListener("click",  function(e)
 {
   subMenu.innerHTML = "";

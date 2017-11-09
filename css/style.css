@@ -17,7 +17,7 @@ nav {
 }
 
 
-#submenu {
+#subMenu {
   display: none;
   overflow: hidden;
   background: #226666;
@@ -39,7 +39,7 @@ h1 {
   font-family: 'Arvo', serif;
 }
 
-#mainmenu, #maincontent {
+#mainMenu, #mainContent {
   font-family: 'Lato', sans-serif;
 }
 nav > a {
@@ -49,21 +49,21 @@ nav > a {
   font-size: 1.5em;
 }
 
-#mainmenu {
+#mainMenu {
   color: white;
   font-size: 1.5em;
   text-decoration: none;
 }
 
-#mainmenu td:hover {
+#mainMenu td:hover {
   background: #7A9F35;
 }
 
-#mainmenu table {
+#mainMenu table {
   width: 100%;
 
 }
-#mainmenu td {
+#mainMenu td {
   display: block;
   padding: 1em 0em 1em;
   border: 1px white solid;
@@ -75,13 +75,13 @@ nav > a {
 
 
 @media only screen and (min-width: 1110px) {
-  #mainmenu td {
+  #mainMenu td {
     display: table-cell;
     padding: 0em 0em 0em;
     width: 33.3%
   }
-  #submenu td {
-    width: 25%
+  #subMenu td {
+    width: 33%
   }
 
 }
@@ -95,6 +95,21 @@ main img {
   max-width: 100%;
 }
 
-#maincontent figcaption {
+#mainContent figcaption {
   font-style: italic;
+}
+.mainButton {
+  cursor: pointer;
+}
+.mainButton img {
+  height: 100px;
+  filter: grayscale(100%);
+  transform: rotate(15deg);
+  transition: filter 0.5s ease;
+  transition: transform 0.5s ease;
+}
+
+.mainButton:hover img {
+  filter: grayscale(0%);
+  transform: rotate(0deg);
 }
