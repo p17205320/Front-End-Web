@@ -91,17 +91,17 @@
         pageLoadContent.innerHTML = "<article>\n" +
             "<h1>NONE</h1>\n" +
             "<video controls>\n" +
-            "  <source src=\"Media/Level_3_Interactive_Media/Video/None.webm\">\n" +
+            "  <source src=\"http://portfolio.joshua-s.website/Media/Level_3_Interactive_Media/Video/None.webm\">\n" +
             "</video>\n" +
             "\n" +
             "<ul>\n" +
             "  <li>Called \"None\" because i had no idea what to call it</li>\n" +
             "  <li>\"Animated\" in a single day</li>\n" +
-            "  <li>Originally was much longer but cut down to final act due to time (Full Script <a href = \"Media/Level_3_Interactive_Media/Docs/None_Script.pdf\"> Here</a>)</li>\n" +
+            "  <li>Originally was much longer but cut down to final act due to time (Full Script <a href = \"http://portfolio.joshua-s.website/Media/Level_3_Interactive_Media/Docs/None_Script.pdf\"> Here</a>)</li>\n" +
             "  <li>Inspired by <a href = \"http://store.steampowered.com/app/57300/Amnesia_The_Dark_Descent/\">Amnesia: The Dark Descent</a></li>\n" +
             "  <li>Well, <i>heavily</i> inspired. Sound effects, music and monster design all <del>Ripped Off</del> used for inspiration</li>\n" +
             "  <figure>\n" +
-            "    <img src=\"Media/Level_3_Interactive_Media/Image/none/1.jpg\" alt =\"Spitting Image\">\n" +
+            "    <img src=\"http://portfolio.joshua-s.website/Media/Level_3_Interactive_Media/Image/none/1.jpg\" alt =\"Spitting Image\">\n" +
             "    <figcaption>Spitting Image i'd say</figcaption>\n" +
             "  </figure>\n" +
             "</ul>\n" +
@@ -113,7 +113,7 @@
         pageLoadContent.innerHTML = "<article>\n" +
             "  <h1>Robot's Trip</h1>\n" +
             "  <video controls>\n" +
-            "    <source src=\"Media/Level_3_Interactive_Media/Video/Robots_Trip.webm\">\n" +
+            "    <source src=\"http://portfolio.joshua-s.website/Media/Level_3_Interactive_Media/Video/Robots_Trip.webm\">\n" +
             "  </video>\n" +
             "   <ul>\n" +
             "     <li>First experience with cutout animation</li>\n" +
@@ -126,7 +126,7 @@
         pageLoadContent.innerHTML = "<article>\n" +
             "  <h1>Battleship</h1>\n" +
             "  <video controls>\n" +
-            "    <source src=\"Media/Level_3_IT/Video/Battleship_Gameplay.webm\">\n" +
+            "    <source src=\"http://portfolio.joshua-s.website/Media/Level_3_IT/Video/Battleship_Gameplay.webm\">\n" +
             "  </video>\n" +
             "  <ul>\n" +
             "    <li>First experience with Windows Forms</li>\n" +
@@ -134,7 +134,7 @@
             "    <li>Created in Visual Basic</li>\n" +
             "    <li>Uses <a href = \"http://espeak.sourceforge.net/\">espeak</a> for voice synthesis</li>\n" +
             "    <figure>\n" +
-            "      <img src=\"Media/Level_3_IT/Image/battleship/1.png\">\n" +
+            "      <img src=\"http://portfolio.joshua-s.website/Media/Level_3_IT/Image/battleship/1.png\">\n" +
             "      <figcaption>Options screen. One of the main goals was for the program to be customisable</figcaption>\n" +
             "    </figure>\n" +
             "  </ul>\n" +
@@ -147,7 +147,7 @@
             "  <h1>Monsta</h1>\n" +
             "  <figure>\n" +
             "    <video controls>\n" +
-            "      <source src=\"Media/Level_3_IT/Video/Monsta_Gameplay.webm\">\n" +
+            "      <source src=\"http://portfolio.joshua-s.website/Media/Level_3_IT/Video/Monsta_Gameplay.webm\">\n" +
             "    </video>\n" +
             "    <figcaption>I got really unlucky with this run.</figcaption>\n" +
             "  </figure>\n" +
