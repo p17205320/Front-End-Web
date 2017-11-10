@@ -24,7 +24,7 @@
       pageLoadContent.innerHTML = "<section>\n" +
           "  <h1>About Me</h1>\n" +
           "  <figure>\n" +
-          "    <img src=\"Media/About_Me/me_hnd_grad.jpg\">\n" +
+          "    <img src=\"http://portfolio.joshua-s.website/Media/About_Me/me_hnd_grad.jpg\">\n" +
           "    <figcaption>Me at my graduation for HND Computing and Systems Development. 2nd from the right at top</figcaption>\n" +
           "  </figure>\n" +
           "  <p> My name is Joshua. I am a third year student at <a href = \"http://www.dmu.ac.uk/\">De Montfort University</a> studying <a href = \"http://www.dmu.ac.uk/study/courses/undergraduate-courses/computing-bsc/computing-bsc-degree.aspx\">BSC Computing</a>.\n" +
@@ -88,7 +88,8 @@
       if (e.target.dataset.button === "none") {
         mainContent.animate([ { opacity: 1 }, { opacity: 0 } ], 500);
         hideAll();
-        pageLoadContent.innerHTML = "<h1>NONE</h1>\n" +
+        pageLoadContent.innerHTML = "<article>\n" +
+            "<h1>NONE</h1>\n" +
             "<video controls>\n" +
             "  <source src=\"Media/Level_3_Interactive_Media/Video/None.webm\">\n" +
             "</video>\n" +
@@ -103,47 +104,93 @@
             "    <img src=\"Media/Level_3_Interactive_Media/Image/none/1.jpg\" alt =\"Spitting Image\">\n" +
             "    <figcaption>Spitting Image i'd say</figcaption>\n" +
             "  </figure>\n" +
-            "</ul>";
+            "</ul>\n" +
+            "</article>";
         mainContent.animate([ { opacity: 0 }, { opacity: 1 } ], 500);
       } else if (e.target.dataset.button === "robotsTrip") {
         mainContent.animate([ { opacity: 1 }, { opacity: 0 } ], 500);
-        mainContent.innerHTML = "";
+        hideAll();
+        pageLoadContent.innerHTML = "<article>\n" +
+            "  <h1>Robot's Trip</h1>\n" +
+            "  <video controls>\n" +
+            "    <source src=\"Media/Level_3_Interactive_Media/Video/Robots_Trip.webm\">\n" +
+            "  </video>\n" +
+            "   <ul>\n" +
+            "     <li>First experience with cutout animation</li>\n" +
+            "   </ul>\n" +
+            "</article>";
         mainContent.animate([ { opacity: 0 }, { opacity: 1 } ], 500);
       } else if (e.target.dataset.button === "battleship") {
         mainContent.animate([ { opacity: 1 }, { opacity: 0 } ], 500);
-        mainContent.innerHTML = "";
+        hideAll();
+        pageLoadContent.innerHTML = "<article>\n" +
+            "  <h1>Battleship</h1>\n" +
+            "  <video controls>\n" +
+            "    <source src=\"Media/Level_3_IT/Video/Battleship_Gameplay.webm\">\n" +
+            "  </video>\n" +
+            "  <ul>\n" +
+            "    <li>First experience with Windows Forms</li>\n" +
+            "    <li>First experience with creating a program with a GUI</li>\n" +
+            "    <li>Created in Visual Basic</li>\n" +
+            "    <li>Uses <a href = \"http://espeak.sourceforge.net/\">espeak</a> for voice synthesis</li>\n" +
+            "    <figure>\n" +
+            "      <img src=\"Media/Level_3_IT/Image/battleship/1.png\">\n" +
+            "      <figcaption>Options screen. One of the main goals was for the program to be customisable</figcaption>\n" +
+            "    </figure>\n" +
+            "  </ul>\n" +
+            "</article>";
         mainContent.animate([ { opacity: 0 }, { opacity: 1 } ], 500);
       } else if (e.target.dataset.button === "monsta") {
         mainContent.animate([ { opacity: 1 }, { opacity: 0 } ], 500);
-        mainContent.innerHTML = "";
+        hideAll();
+        pageLoadContent.innerHTML = "<article>\n" +
+            "  <h1>Monsta</h1>\n" +
+            "  <figure>\n" +
+            "    <video controls>\n" +
+            "      <source src=\"Media/Level_3_IT/Video/Monsta_Gameplay.webm\">\n" +
+            "    </video>\n" +
+            "    <figcaption>I got really unlucky with this run.</figcaption>\n" +
+            "  </figure>\n" +
+            "  <ul>\n" +
+            "    <li>First experience with Visual Basic</li>\n" +
+            "    <li>First experience with Programming.</li>\n" +
+            "  </ul>\n" +
+            "</article>";
         mainContent.animate([ { opacity: 0 }, { opacity: 1 } ], 500);
       } else if (e.target.dataset.button === "ncsVideo") {
         mainContent.animate([ { opacity: 1 }, { opacity: 0 } ], 500);
-        mainContent.innerHTML = "";
+        hideAll();
+        pageLoadContent.innerHTML = "";
         mainContent.animate([ { opacity: 0 }, { opacity: 1 } ], 500);
       } else if (e.target.dataset.button === "stoningCyprus") {
         mainContent.animate([ { opacity: 1 }, { opacity: 0 } ], 500);
-        mainContent.innerHTML = "";
+        hideAll();
+        pageLoadContent.innerHTML = "";
         mainContent.animate([ { opacity: 0 }, { opacity: 1 } ], 500);
       } else if (e.target.dataset.button === "cicVideo") {
         mainContent.animate([ { opacity: 1 }, { opacity: 0 } ], 500);
-        mainContent.innerHTML = "";
+        hideAll();
+        pageLoadContent.innerHTML = "";
         mainContent.animate([ { opacity: 0 }, { opacity: 1 } ], 500);
       } else if (e.target.dataset.button === "stamfordVideo") {
         mainContent.animate([ { opacity: 1 }, { opacity: 0 } ], 500);
-        mainContent.innerHTML = "";
+        hideAll();
+        pageLoadContent.innerHTML = "";
         mainContent.animate([ { opacity: 0 }, { opacity: 1 } ], 500);
       } else if (e.target.dataset.button === "snek") {
         mainContent.animate([ { opacity: 1 }, { opacity: 0 } ], 500);
-        mainContent.innerHTML = "";
+        hideAll();
+        pageLoadContent.innerHTML = "";
         mainContent.animate([ { opacity: 0 }, { opacity: 1 } ], 500);
       } else if (e.target.dataset.button === "xonarSystems") {
         mainContent.animate([ { opacity: 1 }, { opacity: 0 } ], 500);
-        mainContent.innerHTML = "";
+        hideAll();
+        pageLoadContent.innerHTML = "";
         mainContent.animate([ { opacity: 0 }, { opacity: 1 } ], 500);
       } else if (e.target.dataset.button === "grantham") {
         mainContent.animate([ { opacity: 1 }, { opacity: 0 } ], 500);
-        mainContent.innerHTML = "";
+        hideAll();
+        pageLoadContent.innerHTML = "";
         mainContent.animate([ { opacity: 0 }, { opacity: 1 } ], 500);
       }
       else {
