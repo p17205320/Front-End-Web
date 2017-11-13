@@ -119,8 +119,7 @@ main h1, h2 {
 .mainButton img {
   filter: grayscale(100%);
   transform: rotate(15deg);
-  transition: filter 0.5s ease;
-  transition: transform 0.5s cubic-bezier(0.25, 0.1, 0.54, 2.15);
+  transition: all 0.3s cubic-bezier(0.25, 0.1, 0.54, 2.15);
   border-radius: 100px;
 }
 
@@ -133,14 +132,14 @@ main h1, h2 {
   border-right-width: 0px;
   border-bottom-left-radius: 200px;
   border-top-left-radius: 192px;
-  transition: border 0.5s ease;
+  transition: border 0.3s ease;
   width: 200px;
 }
 
 .mainButton > td:nth-child(2) {
   border: 5px solid black;
   border-left-width: 0px;
-  transition: border 0.5s ease;
+  transition: border 0.3s ease;
 }
 
 .mainButton:hover td:nth-child(1) {
