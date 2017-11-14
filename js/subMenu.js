@@ -10,13 +10,14 @@
   {
     if (e.target.dataset.menuitem === "prevWork") {
       subMenu.innerHTML = "<table> <tr> " +
-        "<td href = '#' data-menuItem = 'level3Media'> Level 3 Interactive Media</td>" +
-        "<td href = '#' data-menuItem = 'level3IT'> Level 3 IT</td>" +
-        "<td href = '#' data-menuItem = 'HNDIT'> HND Computing</td>"  +
-        "<td href = '#' data-menuItem = 'other'> Other</td></tr></table>"
+        "<td  data-menuItem = 'level3Media'> Level 3 Interactive Media</td>" +
+        "<td  data-menuItem = 'level3IT'> Level 3 IT</td>" +
+        "<td  data-menuItem = 'HNDIT'> HND Computing</td>"  +
+        "<td  data-menuItem = 'other'> Other</td></tr></table>"
 
-      subMenu.animate([ { opacity: 0 }, { opacity: 1 } ], 300);
+      subMenu.style.visibility = "none";
       subMenu.style.display = "Block";
+
     } else if (e.target.dataset.menuitem === "aboutMe") {
       mainContent.animate([ { opacity: 1 }, { opacity: 0 } ], 300);
       eventKill();
