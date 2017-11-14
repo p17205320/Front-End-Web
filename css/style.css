@@ -1,4 +1,11 @@
-
+@keyframes transitionIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 
 body {
   background: radial-gradient(black 15%, transparent 16%) 0 0, radial-gradient(black 15%, transparent 16%) 8px 8px,
@@ -22,6 +29,8 @@ nav {
   overflow: hidden;
   background: #226666;
   border-radius: 0px 0px 10px 10px;
+
+
 }
 header, footer {
   background: #2D882D;
@@ -157,4 +166,8 @@ video {
 
 #pageLoad {
   text-align: center;
+}
+
+.transition {
+  animation: transitionIn 0.5s 1 ease-in-out;
 }

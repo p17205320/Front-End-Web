@@ -14,5 +14,12 @@ Using HTML5, CSS3 and Javascript
 ##2. CSS animations won't activate if content is injected
 ###Cause(?): Javascript inserts the style as inline to the html.
 ###Initial fix: use javascript Web Animation animations
-###Dropped because: low compatibilty and slowness
-###Actual Fix: ???
+###Dropped because: low compatibility and slowness
+###Actual Fix: Adding a class to CSS and adding the class to the ID when needed
+
+
+#references
+
+https://codepen.io/thetallweeks/pen/boinE 
+
+https://www.sitepoint.com/jquery-vs-raw-javascript-2-css3-animation/

@@ -9,7 +9,7 @@
   mainMenu.addEventListener("click",  function(e)
   {
     if (e.target.dataset.menuitem === "prevWork") {
-      subMenu.innerHTML = "<table> <tr> " +
+      subMenu.innerHTML = "<table><tr>" +
         "<td  data-menuItem = 'level3Media'> Level 3 Interactive Media</td>" +
         "<td  data-menuItem = 'level3IT'> Level 3 IT</td>" +
         "<td  data-menuItem = 'HNDIT'> HND Computing</td>"  +
@@ -17,6 +17,7 @@
 
 
       subMenu.style.display = "Block";
+      subMenu.classList.add("transition");
     } else if (e.target.dataset.menuitem === "aboutMe") {
       
       eventKill();
@@ -30,12 +31,14 @@
         "  <p> My name is Joshua. I am a third year student at <a href = \"http://www.dmu.ac.uk/\">De Montfort University</a> studying <a href = \"http://www.dmu.ac.uk/study/courses/undergraduate-courses/computing-bsc/computing-bsc-degree.aspx\">BSC Computing</a>.\n" +
         "    I was previously studing at <a href = \"http://www.stamford.ac.uk/\">New College Stamford</a> where i studied Interactive Media and Computing</p>\n" +
         "</section>";
-      
+      ;
+      pageTransition();
     } else if (e.target.dataset.menuitem === "level3Media") {
       
       eventKill();
       hideAll();
       document.getElementById("mainButtonContain1").style.display = "Block";
+      document.getElementById("mainButtonContain1").classList.add("transition");
       document.getElementById("mainButtonContain1").addEventListener("click", pageLoad, e);
       
     }else if (e.target.dataset.menuitem === "level3IT") {
@@ -43,6 +46,7 @@
       eventKill();
       hideAll();
       document.getElementById("mainButtonContain2").style.display = "Block";
+      document.getElementById("mainButtonContain2").classList.add("transition");
       document.getElementById("mainButtonContain2").addEventListener("click", pageLoad, e);
       
     }else if (e.target.dataset.menuitem === "HNDIT") {
@@ -50,6 +54,7 @@
       eventKill();
       hideAll();
       document.getElementById("mainButtonContain3").style.display = "Block";
+      document.getElementById("mainButtonContain3").classList.add("transition");
       document.getElementById("mainButtonContain3").addEventListener("click", pageLoad, e);
       
     }else if (e.target.dataset.menuitem === "other") {
@@ -57,6 +62,7 @@
       eventKill();
       hideAll();
       document.getElementById("mainButtonContain4").style.display = "Block";
+      document.getElementById("mainButtonContain4").classList.add("transition");
       document.getElementById("mainButtonContain4").addEventListener("click", pageLoad, e);
       
     } else if (e.target.dataset.menuitem === "homePage") {
@@ -65,6 +71,9 @@
       hideAll();
       pageLoadContent.innerHTML = "<p>Hello and welcome to my portfolio page. Please use the buttons above to navigate the site and see all the previous projects i've done for courses i have been able to find since 2009</p>\n" +
         "  <p>This collection isn't complete but the missing stuff is really awful so you are not missing out on much (Be glad you don't see the first website i ever made. Using Dreamweaver <sub>shudders</sub>)</p>";
+
+      pageTransition();
+
       
     }
 
@@ -80,17 +89,23 @@
     document.getElementById("mainButtonContain2").removeEventListener("click", pageLoad);
     document.getElementById("mainButtonContain3").removeEventListener("click", pageLoad);
     document.getElementById("mainButtonContain4").removeEventListener("click", pageLoad);
-  };
+  }
 
   function hideAll() {
     document.getElementById("mainButtonContain2").style.display = "None";
     document.getElementById("mainButtonContain3").style.display = "None";
     document.getElementById("mainButtonContain1").style.display = "None";
     document.getElementById("mainButtonContain4").style.display = "None";
+    pageLoadContent.style.display = "None";
     pageLoadContent.innerHTML = "";
   }
+  
+  function pageTransition() {
+    pageLoadContent.style.display = "Block";
+    pageLoadContent.classList.add("transition");
+  }
   function pageLoad (e) {
-
+    pageTransition();
     if (e.target.dataset.button === "none") {
       
       hideAll();
@@ -112,6 +127,8 @@
         "  </figure>\n" +
         "</ul>\n" +
         "</article>";
+      pageTransition();
+      
     } else if (e.target.dataset.button === "robotsTrip") {
       hideAll();
       pageLoadContent.innerHTML = "<article>\n" +
@@ -123,6 +140,9 @@
         "     <li>First experience with cutout animation</li>\n" +
         "   </ul>\n" +
         "</article>";
+
+      pageTransition();
+
     } else if (e.target.dataset.button === "battleship") {
       hideAll();
       pageLoadContent.innerHTML = "<article>\n" +
@@ -141,6 +161,9 @@
         "    </figure>\n" +
         "  </ul>\n" +
         "</article>";
+      
+      pageTransition();
+      
     } else if (e.target.dataset.button === "monsta") {
       hideAll();
       pageLoadContent.innerHTML = "<article>\n" +
@@ -156,6 +179,8 @@
         "    <li>First experience with Programming.</li>\n" +
         "  </ul>\n" +
         "</article>";
+      
+      pageTransition();
     } else if (e.target.dataset.button === "ncsVideo") {
       hideAll();
       pageLoadContent.innerHTML = "<article>\n" +
@@ -168,6 +193,8 @@
         "    <li>First time using masking for scene transitions</li>\n" +
         "  </ul>\n" +
         "</article>";
+      
+      pageTransition();
     } else if (e.target.dataset.button === "stoningCyprus") {
       hideAll();
       pageLoadContent.innerHTML = "<article>\n" +
@@ -181,6 +208,8 @@
         "    <li>First experience with HTML5, CSS3, Javascript and Responsive Design</li>\n" +
         "  </ul>\n" +
         "</article>";
+      
+      pageTransition();
     } else if (e.target.dataset.button === "cicVideo") {
       hideAll();
       pageLoadContent.innerHTML = "<article>\n" +
@@ -194,6 +223,8 @@
         "    <li>First experience with PHP & MySQL</li>\n" +
         "  </ul>\n" +
         "</article>";
+      
+      pageTransition();
     } else if (e.target.dataset.button === "stamfordVideo") {
       hideAll();
       pageLoadContent.innerHTML = "<article>\n" +
@@ -206,6 +237,8 @@
         "    <li>Filmed on a phone and stabilized in post (We were supposed to get a proper camera but whatever)</li>\n" +
         "  </ul>\n" +
         "</article>";
+      
+      pageTransition();
     } else if (e.target.dataset.button === "snek") {
       hideAll();
       pageLoadContent.innerHTML = "<article>\n" +
@@ -218,6 +251,8 @@
         "    <lI>First Experience with C# games dev</lI>\n" +
         "  </ul>\n" +
         "</article>";
+      
+      pageTransition();
     } else if (e.target.dataset.button === "xonarSystems") {
       hideAll();
       pageLoadContent.innerHTML = "<article>\n" +
@@ -232,6 +267,8 @@
         "    <li>Took 4 days to create</li>\n" +
         "  </ul>\n" +
         "</article>";
+
+      pageTransition();
     } else if (e.target.dataset.button === "grantham") {
       hideAll();
       pageLoadContent.innerHTML = "<article>\n" +
@@ -252,6 +289,8 @@
         "    <li>I was somehow accepted onto Level 3 Interactive Media with just this in my portfolio</li>\n" +
         "  </ul>\n" +
         "</article>";
+
+      pageTransition();
     }
 
   }
