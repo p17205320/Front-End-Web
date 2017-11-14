@@ -15,11 +15,10 @@
         "<td  data-menuItem = 'HNDIT'> HND Computing</td>"  +
         "<td  data-menuItem = 'other'> Other</td></tr></table>"
 
-      subMenu.style.visibility = "none";
-      subMenu.style.display = "Block";
 
+      subMenu.style.display = "Block";
     } else if (e.target.dataset.menuitem === "aboutMe") {
-      mainContent.animate([ { opacity: 1 }, { opacity: 0 } ], 300);
+      
       eventKill();
       hideAll();
       pageLoadContent.innerHTML = "<section>\n" +
@@ -31,42 +30,42 @@
         "  <p> My name is Joshua. I am a third year student at <a href = \"http://www.dmu.ac.uk/\">De Montfort University</a> studying <a href = \"http://www.dmu.ac.uk/study/courses/undergraduate-courses/computing-bsc/computing-bsc-degree.aspx\">BSC Computing</a>.\n" +
         "    I was previously studing at <a href = \"http://www.stamford.ac.uk/\">New College Stamford</a> where i studied Interactive Media and Computing</p>\n" +
         "</section>";
-      mainContent.animate([ { opacity: 0 }, { opacity: 1 } ], 300);
+      
     } else if (e.target.dataset.menuitem === "level3Media") {
-      mainContent.animate([ { opacity: 1 }, { opacity: 0 } ], 300);
+      
       eventKill();
       hideAll();
       document.getElementById("mainButtonContain1").style.display = "Block";
       document.getElementById("mainButtonContain1").addEventListener("click", pageLoad, e);
-      mainContent.animate([ { opacity: 0 }, { opacity: 1 } ], 300);
+      
     }else if (e.target.dataset.menuitem === "level3IT") {
-      mainContent.animate([ { opacity: 1 }, { opacity: 0 } ], 300);
+      
       eventKill();
       hideAll();
       document.getElementById("mainButtonContain2").style.display = "Block";
       document.getElementById("mainButtonContain2").addEventListener("click", pageLoad, e);
-      mainContent.animate([ { opacity: 0 }, { opacity: 1 } ], 300);
+      
     }else if (e.target.dataset.menuitem === "HNDIT") {
-      mainContent.animate([ { opacity: 1 }, { opacity: 0 } ], 300);
+      
       eventKill();
       hideAll();
       document.getElementById("mainButtonContain3").style.display = "Block";
       document.getElementById("mainButtonContain3").addEventListener("click", pageLoad, e);
-      mainContent.animate([ { opacity: 0 }, { opacity: 1 } ], 300);
+      
     }else if (e.target.dataset.menuitem === "other") {
-      mainContent.animate([ { opacity: 1 }, { opacity: 0 } ], 300);
+      
       eventKill();
       hideAll();
       document.getElementById("mainButtonContain4").style.display = "Block";
       document.getElementById("mainButtonContain4").addEventListener("click", pageLoad, e);
-      mainContent.animate([ { opacity: 0 }, { opacity: 1 } ], 300);
+      
     } else if (e.target.dataset.menuitem === "homePage") {
-      mainContent.animate([ { opacity: 1 }, { opacity: 0 } ], 300);
+      
       eventKill();
       hideAll();
       pageLoadContent.innerHTML = "<p>Hello and welcome to my portfolio page. Please use the buttons above to navigate the site and see all the previous projects i've done for courses i have been able to find since 2009</p>\n" +
         "  <p>This collection isn't complete but the missing stuff is really awful so you are not missing out on much (Be glad you don't see the first website i ever made. Using Dreamweaver <sub>shudders</sub>)</p>";
-      mainContent.animate([ { opacity: 0 }, { opacity: 1 } ], 300);
+      
     }
 
 
@@ -93,7 +92,7 @@
   function pageLoad (e) {
 
     if (e.target.dataset.button === "none") {
-      mainContent.animate([ { opacity: 1 }, { opacity: 0 } ], 300);
+      
       hideAll();
       pageLoadContent.innerHTML = "<article>\n" +
         "<h1>NONE</h1>\n" +
@@ -113,9 +112,7 @@
         "  </figure>\n" +
         "</ul>\n" +
         "</article>";
-      mainContent.animate([ { opacity: 0 }, { opacity: 1 } ], 300);
     } else if (e.target.dataset.button === "robotsTrip") {
-      mainContent.animate([ { opacity: 1 }, { opacity: 0 } ], 300);
       hideAll();
       pageLoadContent.innerHTML = "<article>\n" +
         "  <h1>Robot's Trip</h1>\n" +
@@ -126,9 +123,7 @@
         "     <li>First experience with cutout animation</li>\n" +
         "   </ul>\n" +
         "</article>";
-      mainContent.animate([ { opacity: 0 }, { opacity: 1 } ], 300);
     } else if (e.target.dataset.button === "battleship") {
-      mainContent.animate([ { opacity: 1 }, { opacity: 0 } ], 300);
       hideAll();
       pageLoadContent.innerHTML = "<article>\n" +
         "  <h1>Battleship</h1>\n" +
@@ -146,9 +141,7 @@
         "    </figure>\n" +
         "  </ul>\n" +
         "</article>";
-      mainContent.animate([ { opacity: 0 }, { opacity: 1 } ], 300);
     } else if (e.target.dataset.button === "monsta") {
-      mainContent.animate([ { opacity: 1 }, { opacity: 0 } ], 300);
       hideAll();
       pageLoadContent.innerHTML = "<article>\n" +
         "  <h1>Monsta</h1>\n" +
@@ -163,9 +156,7 @@
         "    <li>First experience with Programming.</li>\n" +
         "  </ul>\n" +
         "</article>";
-      mainContent.animate([ { opacity: 0 }, { opacity: 1 } ], 300);
     } else if (e.target.dataset.button === "ncsVideo") {
-      mainContent.animate([ { opacity: 1 }, { opacity: 0 } ], 300);
       hideAll();
       pageLoadContent.innerHTML = "<article>\n" +
         "  <h1>New College Stamford - Promo</h1>\n" +
@@ -177,9 +168,7 @@
         "    <li>First time using masking for scene transitions</li>\n" +
         "  </ul>\n" +
         "</article>";
-      mainContent.animate([ { opacity: 0 }, { opacity: 1 } ], 300);
     } else if (e.target.dataset.button === "stoningCyprus") {
-      mainContent.animate([ { opacity: 1 }, { opacity: 0 } ], 300);
       hideAll();
       pageLoadContent.innerHTML = "<article>\n" +
         "  <h1>Stoning Cyprus Website</h1>\n" +
@@ -192,9 +181,7 @@
         "    <li>First experience with HTML5, CSS3, Javascript and Responsive Design</li>\n" +
         "  </ul>\n" +
         "</article>";
-      mainContent.animate([ { opacity: 0 }, { opacity: 1 } ], 300);
     } else if (e.target.dataset.button === "cicVideo") {
-      mainContent.animate([ { opacity: 1 }, { opacity: 0 } ], 300);
       hideAll();
       pageLoadContent.innerHTML = "<article>\n" +
         "  <h1>CiC Video Site</h1>\n" +
@@ -207,9 +194,7 @@
         "    <li>First experience with PHP & MySQL</li>\n" +
         "  </ul>\n" +
         "</article>";
-      mainContent.animate([ { opacity: 0 }, { opacity: 1 } ], 300);
     } else if (e.target.dataset.button === "stamfordVideo") {
-      mainContent.animate([ { opacity: 1 }, { opacity: 0 } ], 300);
       hideAll();
       pageLoadContent.innerHTML = "<article>\n" +
         "  <h1>History of Stamford</h1>\n" +
@@ -221,9 +206,7 @@
         "    <li>Filmed on a phone and stabilized in post (We were supposed to get a proper camera but whatever)</li>\n" +
         "  </ul>\n" +
         "</article>";
-      mainContent.animate([ { opacity: 0 }, { opacity: 1 } ], 300);
     } else if (e.target.dataset.button === "snek") {
-      mainContent.animate([ { opacity: 1 }, { opacity: 0 } ], 300);
       hideAll();
       pageLoadContent.innerHTML = "<article>\n" +
         "  <h1>Snek</h1>\n" +
@@ -235,9 +218,7 @@
         "    <lI>First Experience with C# games dev</lI>\n" +
         "  </ul>\n" +
         "</article>";
-      mainContent.animate([ { opacity: 0 }, { opacity: 1 } ], 300);
     } else if (e.target.dataset.button === "xonarSystems") {
-      mainContent.animate([ { opacity: 1 }, { opacity: 0 } ], 300);
       hideAll();
       pageLoadContent.innerHTML = "<article>\n" +
         "  <h1>Xonar Systems Site</h1>\n" +
@@ -251,9 +232,7 @@
         "    <li>Took 4 days to create</li>\n" +
         "  </ul>\n" +
         "</article>";
-      mainContent.animate([ { opacity: 0 }, { opacity: 1 } ], 300);
     } else if (e.target.dataset.button === "grantham") {
-      mainContent.animate([ { opacity: 1 }, { opacity: 0 } ], 300);
       hideAll();
       pageLoadContent.innerHTML = "<article>\n" +
         "  <h1>A documentary we did about the shops in grantham</h1>\n" +
@@ -273,7 +252,6 @@
         "    <li>I was somehow accepted onto Level 3 Interactive Media with just this in my portfolio</li>\n" +
         "  </ul>\n" +
         "</article>";
-      mainContent.animate([ { opacity: 0 }, { opacity: 1 } ], 300);
     }
 
   }
