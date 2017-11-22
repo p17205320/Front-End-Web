@@ -58,25 +58,33 @@ nav > a {
   font-size: 1.5em;
 }
 
-#mainMenu {
+#mainMenu, #subMenu {
   display: flex;
   flex-direction: column;
-  transition: flex-direction 1s ease;
+
 }
 
-#mainMenu button:hover {
+#mainMenu button:hover, #subMenu button:hover {
   background: #7A9F35;
 }
 
 
-#mainMenu button {
+
+#mainMenu button, #subMenu button {
   text-decoration: none;
   transition: background 0.2s ease-in-out;
   margin:auto;
-
+  background: transparent;
+  color: white;
+  font-size: x-large;
+  width: 100%;
+  border: 1px solid white;
+  cursor: pointer;
 }
 
-
+#subMenu {
+  display: none;
+}
 @media only screen and (min-width: 1110px) {
   #mainMenu, #subMenu {
     flex-direction: row;
