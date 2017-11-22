@@ -29,6 +29,7 @@ nav {
   overflow: hidden;
   background: #226666;
   border-radius: 0px 0px 10px 10px;
+  flex-direction: column;
 
 
 }
@@ -58,39 +59,30 @@ nav > a {
 }
 
 #mainMenu {
-  color: white;
-  font-size: 1.5em;
-  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  transition: flex-direction 1s ease;
 }
 
-#mainMenu td:hover {
+#mainMenu button:hover {
   background: #7A9F35;
 }
 
-#mainMenu table {
-  width: 100%;
 
-}
-#mainMenu td {
-  display: block;
-  padding: 1em 0em 1em;
-  border: 1px white solid;
+#mainMenu button {
   text-decoration: none;
-  cursor: pointer;
   transition: background 0.2s ease-in-out;
+  margin:auto;
 
 }
 
 
 @media only screen and (min-width: 1110px) {
-  #mainMenu td {
-    display: table-cell;
-    padding: 0em 0em 0em;
-    width: 33.3%
+  #mainMenu, #subMenu {
+    flex-direction: row;
   }
-  #subMenu td {
-    width: 25%
-  }
+
+
 
 }
 main {
@@ -112,12 +104,6 @@ main img {
   margin: auto;
 }
 
-main table {
-  width: 50%;
-  margin: auto;
-  border-spacing: 0;
-}
-
 main h1, h2 {
   text-align: center;
 }
@@ -135,7 +121,7 @@ main h1, h2 {
   filter: grayscale(0%);
   transform: rotate(0deg);
 }
-.mainButton > td:nth-child(1) {
+.mainButton > button {
   border: 5px solid black;
   border-right-width: 0px;
   border-bottom-left-radius: 200px;
@@ -144,21 +130,6 @@ main h1, h2 {
   width: 200px;
 }
 
-.mainButton > td:nth-child(2) {
-  border: 5px solid black;
-  border-left-width: 0px;
-  transition: border 0.3s ease;
-}
-
-.mainButton:hover td:nth-child(1) {
-  border: 15px solid #7A9F35;
-  border-right-width: 0px;
-}
-
-.mainButton:hover td:nth-child(2) {
-  border: 15px solid #7A9F35;
-  border-left-width: 0px;
-}
 
 video {
   max-width: 100%;

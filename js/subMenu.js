@@ -9,14 +9,7 @@
   mainMenu.addEventListener("click",  function(e)
   {
     if (e.target.dataset.menuitem === "prevWork") {
-      subMenu.innerHTML = "<table><tr>" +
-        "<td  data-menuItem = 'level3Media'> Level 3 Interactive Media</td>" +
-        "<td  data-menuItem = 'level3IT'> Level 3 IT</td>" +
-        "<td  data-menuItem = 'HNDIT'> HND Computing</td>"  +
-        "<td  data-menuItem = 'other'> Other</td></tr></table>"
-
-
-      subMenu.style.display = "Block";
+      subMenu.style.display = "Flex";
       subMenu.classList.add("transition");
     } else if (e.target.dataset.menuitem === "aboutMe") {
       
@@ -37,7 +30,7 @@
       
       eventKill();
       hideAll();
-      document.getElementById("mainButtonContain1").style.display = "Block";
+      document.getElementById("mainButtonContain1").style.display = "Flex";
       document.getElementById("mainButtonContain1").classList.add("transition");
       document.getElementById("mainButtonContain1").addEventListener("click", pageLoad, e);
       
@@ -45,7 +38,7 @@
       
       eventKill();
       hideAll();
-      document.getElementById("mainButtonContain2").style.display = "Block";
+      document.getElementById("mainButtonContain2").style.display = "Flex";
       document.getElementById("mainButtonContain2").classList.add("transition");
       document.getElementById("mainButtonContain2").addEventListener("click", pageLoad, e);
       
@@ -53,7 +46,7 @@
       
       eventKill();
       hideAll();
-      document.getElementById("mainButtonContain3").style.display = "Block";
+      document.getElementById("mainButtonContain3").style.display = "Flex";
       document.getElementById("mainButtonContain3").classList.add("transition");
       document.getElementById("mainButtonContain3").addEventListener("click", pageLoad, e);
       
@@ -61,7 +54,7 @@
       
       eventKill();
       hideAll();
-      document.getElementById("mainButtonContain4").style.display = "Block";
+      document.getElementById("mainButtonContain4").style.display = "Flex";
       document.getElementById("mainButtonContain4").classList.add("transition");
       document.getElementById("mainButtonContain4").addEventListener("click", pageLoad, e);
       
