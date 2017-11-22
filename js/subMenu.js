@@ -6,14 +6,14 @@
   let mainContent = document.getElementById("mainContent");
   console.log(mainContent);
   let pageLoadContent = document.getElementById("pageLoad");
-  mainMenu.addEventListener("click",  function(e)
+  document.addEventListener("click",  function(e)
   {
     if (e.target.dataset.menuitem === "prevWork") {
       subMenu.style.display = "Flex";
       subMenu.classList.add("transition");
     } else if (e.target.dataset.menuitem === "aboutMe") {
       
-      eventKill();
+
       hideAll();
       pageLoadContent.innerHTML = "<section>\n" +
         "  <h1>About Me</h1>\n" +
@@ -28,39 +28,35 @@
       pageTransition();
     } else if (e.target.dataset.menuitem === "level3Media") {
       
-      eventKill();
+
       hideAll();
       document.getElementById("mainButtonContain1").style.display = "Flex";
       document.getElementById("mainButtonContain1").classList.add("transition");
-      document.getElementById("mainButtonContain1").addEventListener("click", pageLoad, e);
-      
+
     }else if (e.target.dataset.menuitem === "level3IT") {
       
-      eventKill();
+
       hideAll();
       document.getElementById("mainButtonContain2").style.display = "Flex";
       document.getElementById("mainButtonContain2").classList.add("transition");
-      document.getElementById("mainButtonContain2").addEventListener("click", pageLoad, e);
-      
+
     }else if (e.target.dataset.menuitem === "HNDIT") {
       
-      eventKill();
+
       hideAll();
       document.getElementById("mainButtonContain3").style.display = "Flex";
       document.getElementById("mainButtonContain3").classList.add("transition");
-      document.getElementById("mainButtonContain3").addEventListener("click", pageLoad, e);
-      
+
     }else if (e.target.dataset.menuitem === "other") {
       
-      eventKill();
+
       hideAll();
       document.getElementById("mainButtonContain4").style.display = "Flex";
       document.getElementById("mainButtonContain4").classList.add("transition");
-      document.getElementById("mainButtonContain4").addEventListener("click", pageLoad, e);
-      
+
     } else if (e.target.dataset.menuitem === "homePage") {
       
-      eventKill();
+
       hideAll();
       pageLoadContent.innerHTML = "<p>Hello and welcome to my portfolio page. Please use the buttons above to navigate the site and see all the previous projects i've done for courses i have been able to find since 2009</p>\n" +
         "  <p>This collection isn't complete but the missing stuff is really awful so you are not missing out on much (Be glad you don't see the first website i ever made. Using Dreamweaver <sub>shudders</sub>)</p>";
@@ -69,38 +65,8 @@
 
       
     }
-
-
-
-
-
-
-  });
-
-  function eventKill() {
-    document.getElementById("mainButtonContain1").removeEventListener("click", pageLoad);
-    document.getElementById("mainButtonContain2").removeEventListener("click", pageLoad);
-    document.getElementById("mainButtonContain3").removeEventListener("click", pageLoad);
-    document.getElementById("mainButtonContain4").removeEventListener("click", pageLoad);
-  }
-
-  function hideAll() {
-    document.getElementById("mainButtonContain2").style.display = "None";
-    document.getElementById("mainButtonContain3").style.display = "None";
-    document.getElementById("mainButtonContain1").style.display = "None";
-    document.getElementById("mainButtonContain4").style.display = "None";
-    pageLoadContent.style.display = "None";
-    pageLoadContent.innerHTML = "";
-  }
-  
-  function pageTransition() {
-    pageLoadContent.style.display = "Block";
-    pageLoadContent.classList.add("transition");
-  }
-  function pageLoad (e) {
-    pageTransition();
     if (e.target.dataset.button === "none") {
-      
+
       hideAll();
       pageLoadContent.innerHTML = "<article>\n" +
         "<h1>NONE</h1>\n" +
@@ -121,7 +87,7 @@
         "</ul>\n" +
         "</article>";
       pageTransition();
-      
+
     } else if (e.target.dataset.button === "robotsTrip") {
       hideAll();
       pageLoadContent.innerHTML = "<article>\n" +
@@ -154,9 +120,9 @@
         "    </figure>\n" +
         "  </ul>\n" +
         "</article>";
-      
+
       pageTransition();
-      
+
     } else if (e.target.dataset.button === "monsta") {
       hideAll();
       pageLoadContent.innerHTML = "<article>\n" +
@@ -172,7 +138,7 @@
         "    <li>First experience with Programming.</li>\n" +
         "  </ul>\n" +
         "</article>";
-      
+
       pageTransition();
     } else if (e.target.dataset.button === "ncsVideo") {
       hideAll();
@@ -186,7 +152,7 @@
         "    <li>First time using masking for scene transitions</li>\n" +
         "  </ul>\n" +
         "</article>";
-      
+
       pageTransition();
     } else if (e.target.dataset.button === "stoningCyprus") {
       hideAll();
@@ -201,7 +167,7 @@
         "    <li>First experience with HTML5, CSS3, Javascript and Responsive Design</li>\n" +
         "  </ul>\n" +
         "</article>";
-      
+
       pageTransition();
     } else if (e.target.dataset.button === "cicVideo") {
       hideAll();
@@ -216,7 +182,7 @@
         "    <li>First experience with PHP & MySQL</li>\n" +
         "  </ul>\n" +
         "</article>";
-      
+
       pageTransition();
     } else if (e.target.dataset.button === "stamfordVideo") {
       hideAll();
@@ -230,7 +196,7 @@
         "    <li>Filmed on a phone and stabilized in post (We were supposed to get a proper camera but whatever)</li>\n" +
         "  </ul>\n" +
         "</article>";
-      
+
       pageTransition();
     } else if (e.target.dataset.button === "snek") {
       hideAll();
@@ -244,7 +210,7 @@
         "    <lI>First Experience with C# games dev</lI>\n" +
         "  </ul>\n" +
         "</article>";
-      
+
       pageTransition();
     } else if (e.target.dataset.button === "xonarSystems") {
       hideAll();
@@ -285,6 +251,31 @@
 
       pageTransition();
     }
+
+
+
+
+
+
+  });
+
+
+  function hideAll() {
+    document.getElementById("mainButtonContain2").style.display = "None";
+    document.getElementById("mainButtonContain3").style.display = "None";
+    document.getElementById("mainButtonContain1").style.display = "None";
+    document.getElementById("mainButtonContain4").style.display = "None";
+    pageLoadContent.style.display = "None";
+    pageLoadContent.innerHTML = "";
+  }
+  
+  function pageTransition() {
+    pageLoadContent.style.display = "Block";
+    pageLoadContent.classList.add("transition");
+  }
+  function pageLoad (e) {
+    pageTransition();
+
 
   }
 
