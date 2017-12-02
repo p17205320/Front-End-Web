@@ -51,8 +51,7 @@
       
 
       hideAll();
-      pageLoadContent.innerHTML = "<p>Hello and welcome to my portfolio page. Please use the buttons above to navigate the site and see all the previous projects i've done for courses i have been able to find since 2009</p>\n" +
-        "  <p>This collection isn't complete but the missing stuff is really awful so you are not missing out on much (Be glad you don't see the first website i ever made. Using Dreamweaver <sub>shudders</sub>)</p>";
+      loadContent("Pages/other/homepage.txt");
 
       pageTransition();
 
@@ -112,6 +111,11 @@
       hideAll();
       subMenuHide();
       loadContent("Pages/other/grantham.txt");
+      pageTransition();
+    } else if (e.target.dataset.button === "photography") {
+      hideAll();
+      subMenuHide();
+      loadContent("Pages/level3media/photography.txt");
       pageTransition();
     }
 

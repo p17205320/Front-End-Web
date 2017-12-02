@@ -143,6 +143,26 @@ video {
   animation: transitionIn 0.5s 1 ease-in-out;
 }
 
+
+main {
+  background: white;
+  padding: 1em;
+
+}
+
+#photoThumb img {
+  width: 300px;
+  margin: 3em;
+  border: 1px solid black;
+  transition: all 0.3s ease;
+}
+
+#photoThumb {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
 @media only screen and (min-width: 1110px) {
   #mainMenu, #subMenu {
     flex-direction: row;
@@ -158,9 +178,9 @@ video {
     margin: 1em;
   }
 
-}
-main {
-  background: white;
-  padding: 1em;
+  #photoThumb img {
+    width: 150px;
+    margin: 1em;
+  }
 
 }
