@@ -1,0 +1,13 @@
+<article>
+  <h1>Monsta</h1>
+  <figure>
+    <video controls>
+      <source src="https://portfolio.joshua-s.website/Media/Level_3_IT/Video/Monsta_Gameplay.webm">
+    </video>
+    <figcaption>I got really unlucky with this run.</figcaption>
+  </figure>
+  <ul>
+    <li>First experience with Visual Basic</li>
+    <li>First experience with Programming.</li>
+  </ul>
+</article>

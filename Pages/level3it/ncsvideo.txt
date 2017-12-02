@@ -1,0 +1,10 @@
+<article>
+  <h1>New College Stamford - Promo</h1>
+    <video controls>
+      <source src="https://portfolio.joshua-s.website/Media/Level_3_IT/Video/NCS_promo.webm">
+    </video>
+  <ul>
+    <li>Created to showcase the various departments of New College Stamford</li>
+    <li>First time using masking for scene transitions</li>
+  </ul>
+</article>
