@@ -1,0 +1,9 @@
+<article>
+  <h1>Robot's Trip</h1>
+  <video controls>
+    <source src="https://portfolio.joshua-s.website/Media/Level_3_Interactive_Media/Video/Robots_Trip.webm">
+  </video>
+   <ul>
+     <li>First experience with cutout animation</li>
+   </ul>
+</article>

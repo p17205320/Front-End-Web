@@ -1,0 +1,11 @@
+<article>
+  <h1>Stoning Cyprus Website</h1>
+  <figure>
+    <img src = "https://portfolio.joshua-s.website/Media/Level_3_IT/Image/stoning_cyprus/1.png" alt ="Screenshot of Stoning Cyprus Website">
+    <figcaption><a href = "https://stoning-cyprus.joshua-s.website">Live Version</a></figcaption>
+  </figure>
+  <ul>
+    <li>Created to promote a fictitious album</li>
+    <li>First experience with HTML5, CSS3, Javascript and Responsive Design</li>
+  </ul>
+</article>

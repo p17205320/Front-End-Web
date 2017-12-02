@@ -1,0 +1,10 @@
+<article>
+  <h1>History of Stamford</h1>
+  <video controls>
+    <source src="https://portfolio.joshua-s.website/Media/HND_Computing/Video/Stamford_History.webm">
+  </video>
+  <ul>
+    <li>Created to showcase the history of Stamford</li>
+    <li>Filmed on a phone and stabilized in post (We were supposed to get a proper camera but whatever)</li>
+  </ul>
+</article>

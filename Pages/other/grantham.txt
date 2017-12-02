@@ -1,0 +1,18 @@
+<article>
+  <h1>A documentary we did about the shops in grantham</h1>
+  <video controls>
+    <source src="https://portfolio.joshua-s.website/Media/Other/Video/grantham_doc.webm">
+  </video>
+  <ul>
+    <li>Extended/Directors cut made years after the original</li>
+    <li>Bad title because i forgot the original one</li>
+    <li>Made in 2009</li>
+    <li>Created for a documentary contest. Group that created the best documentary won something and was supposed to be featured in an article in the guardian or something</li>
+    <li>Audio is terrible because the backup director forgot to plug in the mic (I was ill on the timing of shooting)</li>
+    <li>Original edit by the backup director was soo bad i had to edit a new version on the day of submission</li>
+    <li>Original edit won the competition against the other 3 entries!</li>
+    <li><small>But only because it was the only entry the meet the entry criteria!</small></li>
+    <li>That article never happened surprisingly</li>
+    <li>I was somehow accepted onto Level 3 Interactive Media with just this in my portfolio</li>
+  </ul>
+</article>
