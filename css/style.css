@@ -28,7 +28,7 @@ nav {
   display: none;
   overflow: hidden;
   background: #226666;
-  border-radius: 0px 0px 10px 10px;
+  flex-direction: column;
 
 
 }
@@ -47,7 +47,7 @@ h1 {
   font-family: 'Arvo', serif;
 }
 
-#mainMenu, #mainContent {
+#mainMenu, #mainContent, #subMenu {
   font-family: 'Lato', sans-serif;
 }
 nav > a {
@@ -57,47 +57,35 @@ nav > a {
   font-size: 1.5em;
 }
 
-#mainMenu {
-  color: white;
-  font-size: 1.5em;
-  text-decoration: none;
+#mainMenu, #subMenu {
+  display: flex;
+  flex-direction: column;
+
 }
 
-#mainMenu td:hover {
+#mainMenu button:hover, #subMenu button:hover {
   background: #7A9F35;
 }
 
-#mainMenu table {
-  width: 100%;
 
-}
-#mainMenu td {
-  display: block;
-  padding: 1em 0em 1em;
-  border: 1px white solid;
+
+#mainMenu button, #subMenu button {
   text-decoration: none;
-  cursor: pointer;
   transition: background 0.2s ease-in-out;
-
+  margin:auto;
+  background: transparent;
+  color: white;
+  font-size: x-large;
+  width: 100%;
+  border: 1px solid white;
+  cursor: pointer;
+  height: 4em;
 }
 
-
-@media only screen and (min-width: 1110px) {
-  #mainMenu td {
-    display: table-cell;
-    padding: 0em 0em 0em;
-    width: 33.3%
-  }
-  #subMenu td {
-    width: 25%
-  }
-
+#subMenu {
+  display: none;
 }
-main {
-  background: white;
-  padding: 1em;
 
-}
 
 main img {
   max-width: 100%;
@@ -108,14 +96,12 @@ main img {
 }
 .mainButton {
   cursor: pointer;
-  width: 75%;
-  margin: auto;
-}
+  background: #22666633;
+  transition: all 0.3s ease;
+  width: 100%;
+  height: 400px;
+  margin: 2em;
 
-main table {
-  width: 50%;
-  margin: auto;
-  border-spacing: 0;
 }
 
 main h1, h2 {
@@ -123,42 +109,27 @@ main h1, h2 {
 }
 #mainButtonContain1, #mainButtonContain2, #mainButtonContain3, #mainButtonContain4 {
   display: none;
+  flex-flow: row wrap;
+  justify-content: space-around;
 }
 .mainButton img {
   filter: grayscale(100%);
-  transform: rotate(15deg);
-  transition: all 0.3s cubic-bezier(0.25, 0.1, 0.54, 2.15);
-  border-radius: 100px;
+  transition: all 0.3s ease;
 }
 
 .mainButton:hover img {
   filter: grayscale(0%);
-  transform: rotate(0deg);
-}
-.mainButton > td:nth-child(1) {
-  border: 5px solid black;
-  border-right-width: 0px;
-  border-bottom-left-radius: 200px;
-  border-top-left-radius: 192px;
-  transition: border 0.3s ease;
-  width: 200px;
+  border-radius: 200px;
+  rotate: 360deg;
 }
 
-.mainButton > td:nth-child(2) {
-  border: 5px solid black;
-  border-left-width: 0px;
-  transition: border 0.3s ease;
+.mainButton:hover {
+  background: #226666;
+  color: white;
+  box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
 }
 
-.mainButton:hover td:nth-child(1) {
-  border: 15px solid #7A9F35;
-  border-right-width: 0px;
-}
 
-.mainButton:hover td:nth-child(2) {
-  border: 15px solid #7A9F35;
-  border-left-width: 0px;
-}
 
 video {
   max-width: 100%;
@@ -170,4 +141,26 @@ video {
 
 .transition {
   animation: transitionIn 0.5s 1 ease-in-out;
+}
+
+@media only screen and (min-width: 1110px) {
+  #mainMenu, #subMenu {
+    flex-direction: row;
+  }
+
+  #mainMenu button, #subMenu button {
+    height: 2em;
+  }
+
+  .mainButton {
+    width: 300px;
+    height: 300px;
+    margin: 1em;
+  }
+
+}
+main {
+  background: white;
+  padding: 1em;
+
 }
