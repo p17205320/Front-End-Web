@@ -48,7 +48,7 @@ h1 {
   font-family: 'Arvo', serif;
 }
 
-#mainMenu, #mainContent {
+#mainMenu, #mainContent, #subMenu {
   font-family: 'Lato', sans-serif;
 }
 nav > a {
@@ -108,8 +108,11 @@ main img {
 }
 .mainButton {
   cursor: pointer;
-  width: 75%;
-  margin: auto;
+  width: 300px;
+  height: 300px;
+  background: #22666633;
+  transition: all 0.3s ease;
+  margin-top: 1em;
 }
 
 main h1, h2 {
@@ -117,26 +120,26 @@ main h1, h2 {
 }
 #mainButtonContain1, #mainButtonContain2, #mainButtonContain3, #mainButtonContain4 {
   display: none;
+  flex-flow: row wrap;
+  justify-content: space-around;
 }
 .mainButton img {
   filter: grayscale(100%);
-  transform: rotate(15deg);
-  transition: all 0.3s cubic-bezier(0.25, 0.1, 0.54, 2.15);
-  border-radius: 100px;
+  transition: all 0.3s ease;
 }
 
 .mainButton:hover img {
   filter: grayscale(0%);
-  transform: rotate(0deg);
+  border-radius: 200px;
+  rotate: 360deg;
 }
-.mainButton > button {
-  border: 5px solid black;
-  border-right-width: 0px;
-  border-bottom-left-radius: 200px;
-  border-top-left-radius: 192px;
-  transition: border 0.3s ease;
-  width: 200px;
+
+.mainButton:hover {
+  background: #226666;
+  color: white;
+  box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
 }
+
 
 
 video {
