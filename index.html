@@ -2,7 +2,6 @@
 <html>
 <head>
   <link rel='stylesheet' type='text/css' href='css/style.css'>
-
   <title>Joshua S - Portfolio</title>
   <link href="https://fonts.googleapis.com/css?family=Arvo|Lato" rel="stylesheet">
 </head>
@@ -12,6 +11,7 @@
 <header>
   <h1>Joshua S</h1>
 </header>
+<!--nav tag is give an id so that the javascript can interact with in-->
 <nav id="mainMenu" >
 
   <button  data-menuItem = "homePage">Home</button> <button  data-menuItem = "aboutMe">About Me</button> <button  data-menuItem = "prevWork">Previous Work</button>
@@ -22,11 +22,13 @@
 
 </div>
 <main id = "mainContent">
+  <!--These buttons are loaded in and hidden instead of externally loaded because when the html is inject it breaks eventlisteners which are required for these buttons-->
   <!--Level 3 Media-->
   <div id = "mainButtonContain">
     <div id ="mainButtonContain1">
       <button  data-button = "none" class = "mainButton"> <img data-button = "none" src="https://portfolio.joshua-s.website/Media/Level_3_Interactive_Media/Button/None.jpg" alt = "None Horror Video"><h1 data-button = "none"> None</h1></button>
       <button  data-button = "robotsTrip" class = "mainButton"> <img data-button = "robotsTrip" src="https://portfolio.joshua-s.website/Media/Level_3_Interactive_Media/Button/Robots_Trip.jpg" alt = "Robot's Trip"><h1 data-button = "robotsTrip"> Robot's Trip</h1></button>
+      <button  data-button = "photography" class = "mainButton"> <img data-button = "photography" src="https://portfolio.joshua-s.website/Media/Level_3_Interactive_Media/Button/Photography.jpg" alt = "Photography"><h1 data-button = "photography"> Photography</h1></button>
     </div>
 
     <!--Level 3 IT -->
@@ -53,10 +55,11 @@
 
   <div id = "pageLoad" class = "transition">
     <p>Hello and welcome to my portfolio page. Please use the buttons above to navigate the site and see all the previous projects i've done for courses i have been able to find since 2009</p>
-    <p>This collection isn't complete but the missing stuff is really awful so you are not missing out on much (Be glad you don't see the first website i ever made. Using Dreamweaver <sub>shudders)á</sub></p>
+    <p>This collection isn't complete but the missing stuff is really awful so you are not missing out on much</p>
   </div>
 </main>
 <script type="text/javascript" src="js/subMenu.js"></script>
+<script type="text/javascript" src="js/photoLoad.js"></script>
 </body>
 </html>
 
