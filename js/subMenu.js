@@ -117,6 +117,7 @@
       subMenuHide();
       loadContent("Pages/level3media/photography.txt");
       pageTransition();
+      photo();
     }
 
 
