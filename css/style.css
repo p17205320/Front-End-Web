@@ -80,6 +80,7 @@ nav > a {
   width: 100%;
   border: 1px solid white;
   cursor: pointer;
+  height: 4em;
 }
 
 #subMenu {
@@ -90,7 +91,9 @@ nav > a {
     flex-direction: row;
   }
 
-
+  #mainMenu button, #subMenu button {
+    height: 2em;
+  }
 
 }
 main {
@@ -112,7 +115,7 @@ main img {
   height: 300px;
   background: #22666633;
   transition: all 0.3s ease;
-  margin-top: 1em;
+  margin: 1em;
 }
 
 main h1, h2 {
