@@ -95,12 +95,12 @@
     } else if (e.target.dataset.button === "stamfordVideo") {
       hideAll();
       subMenuHide();
-      loadContent("Pages/hndcomputing/snek.txt");
+      loadContent("Pages/hndcomputing/stamfordhistory.txt");
       pageTransition();
     } else if (e.target.dataset.button === "snek") {
       hideAll();
       subMenuHide();
-      loadContent("Pages/hndcomputing/stamfordhistory.txt");
+      loadContent("Pages/hndcomputing/snek.txt");
       pageTransition();
     } else if (e.target.dataset.button === "xonarSystems") {
       hideAll();
