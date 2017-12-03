@@ -1,9 +1,11 @@
 <article>
   <h1>CiC Video Site</h1>
   <figure>
-    <img src = "https://portfolio.joshua-s.website/Media/HND_Computing/Image/cic_video/1.png" alt = "Screenshot of CIC Video Site">
+    <img data-src = "https://portfolio.joshua-s.website/Media/HND_Computing/Image/cic_video/1.png" alt = "Screenshot of CIC Video Site">
+      <p id = "loadingIndicate">Loading<img src = "css/loading.gif">
     <figcaption><a href = "https://cic-video.joshua-s.website">Live Version</a></figcaption>
   </figure>
+
   <ul>
     <li>IMDB like site</li>
     <li>First experience with PHP & MySQL</li>

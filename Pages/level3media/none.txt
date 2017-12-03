@@ -11,7 +11,8 @@
   <li>Inspired by <a href = "http://store.steampowered.com/app/57300/Amnesia_The_Dark_Descent/">Amnesia: The Dark Descent</a></li>
   <li>Well, <i>heavily</i> inspired. Sound effects, music and monster design all <del>Ripped Off</del> used for inspiration</li>
   <figure>
-    <img src="https://portfolio.joshua-s.website/Media/Level_3_Interactive_Media/Image/none/1.jpg" alt ="Spitting Image">
+    <img data-src="https://portfolio.joshua-s.website/Media/Level_3_Interactive_Media/Image/none/1.jpg" alt ="Spitting Image">
+    <p id = "loadingIndicate">Loading<img src = "css/loading.gif">
     <figcaption>Spitting Image i'd say</figcaption>
   </figure>
 </ul>

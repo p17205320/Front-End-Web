@@ -1,7 +1,8 @@
 <article>
   <h1>Xonar Systems Site</h1>
   <figure>
-    <img src = "https://portfolio.joshua-s.website/Media/HND_Computing/Image/xonar_systems/1.png" alt = "Screenshot of Xonar Systems Site">
+    <img data-src = "https://portfolio.joshua-s.website/Media/HND_Computing/Image/xonar_systems/1.png" alt = "Screenshot of Xonar Systems Site">
+    <p id = "loadingIndicate">Loading<img src = "css/loading.gif">
     <figcaption><a href = "https://xonar-systems.joshua-s.website">Live Version</a></figcaption>
   </figure>
   <ul>
