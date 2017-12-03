@@ -26,3 +26,5 @@ https://codepen.io/thetallweeks/pen/boinE
 https://www.sitepoint.com/jquery-vs-raw-javascript-2-css3-animation/
 
 https://www.w3schools.com/xml/xml_http.asp
+
+https://www.sitepoint.com/five-techniques-lazy-load-images-website-performance/

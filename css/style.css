@@ -87,8 +87,14 @@ nav > a {
 }
 
 
-main img {
+img {
   max-width: 100%;
+  opacity: 1;
+  transition: 0.3s ease;
+}
+
+img[data-src] {
+  opacity: 0;
 }
 
 #mainContent figcaption {
@@ -187,5 +193,8 @@ main {
     /*height set due to bug in chrome*/
     height: 100%;
   }
-
+  #loadingIndicate > img {
+    width:  20px;
+    height: 20px;
+  }
 }

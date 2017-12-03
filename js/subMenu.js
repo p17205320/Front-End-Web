@@ -6,6 +6,7 @@
   let mainContent = document.getElementById("mainContent");
   console.log(mainContent);
   let pageLoadContent = document.getElementById("pageLoad");
+
   document.addEventListener("click",  function(e)
   {
     if (e.target.dataset.menuitem === "prevWork") {
@@ -117,10 +118,11 @@
       subMenuHide();
       loadContent("Pages/level3media/photography.txt");
       pageTransition();
-      photo();
+      document.addEventListener("DOMNodeInserted", photo);
+
     }
 
-
+    document.addEventListener("DOMNodeInserted", lazyLoad);
 
 
 

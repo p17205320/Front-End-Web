@@ -1,7 +1,8 @@
 <article>
   <h1>Stoning Cyprus Website</h1>
   <figure>
-    <img src = "https://portfolio.joshua-s.website/Media/Level_3_IT/Image/stoning_cyprus/1.png" alt ="Screenshot of Stoning Cyprus Website">
+    <img data-src = "https://portfolio.joshua-s.website/Media/Level_3_IT/Image/stoning_cyprus/1.png" alt ="Screenshot of Stoning Cyprus Website">
+    <p id = "loadingIndicate">Loading<img src = "css/loading.gif">
     <figcaption><a href = "https://stoning-cyprus.joshua-s.website">Live Version</a></figcaption>
   </figure>
   <ul>

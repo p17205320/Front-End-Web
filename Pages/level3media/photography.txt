@@ -5,38 +5,38 @@
   </div>
 
   <div id = "photoThumb">
-<img data-photo = "0001" src="https://portfolio.joshua-s.website/Media/Level_3_Interactive_Media/Image/photography/Thumbnail/0001.JPG">
-<img data-photo = "0002" src="https://portfolio.joshua-s.website/Media/Level_3_Interactive_Media/Image/photography/Thumbnail/0002.JPG">
-<img data-photo = "0003" src="https://portfolio.joshua-s.website/Media/Level_3_Interactive_Media/Image/photography/Thumbnail/0003.JPG">
-<img data-photo = "0004" src="https://portfolio.joshua-s.website/Media/Level_3_Interactive_Media/Image/photography/Thumbnail/0004.JPG">
-<img data-photo = "0005" src="https://portfolio.joshua-s.website/Media/Level_3_Interactive_Media/Image/photography/Thumbnail/0005.JPG">
-<img data-photo = "0006" src="https://portfolio.joshua-s.website/Media/Level_3_Interactive_Media/Image/photography/Thumbnail/0006.JPG">
-<img data-photo = "0007" src="https://portfolio.joshua-s.website/Media/Level_3_Interactive_Media/Image/photography/Thumbnail/0007.JPG">
-<img data-photo = "0008" src="https://portfolio.joshua-s.website/Media/Level_3_Interactive_Media/Image/photography/Thumbnail/0008.JPG">
-<img data-photo = "0009" src="https://portfolio.joshua-s.website/Media/Level_3_Interactive_Media/Image/photography/Thumbnail/0009.JPG">
-<img data-photo = "0010" src="https://portfolio.joshua-s.website/Media/Level_3_Interactive_Media/Image/photography/Thumbnail/0010.JPG">
-<img data-photo = "0011" src="https://portfolio.joshua-s.website/Media/Level_3_Interactive_Media/Image/photography/Thumbnail/0011.JPG">
-<img data-photo = "0012" src="https://portfolio.joshua-s.website/Media/Level_3_Interactive_Media/Image/photography/Thumbnail/0012.JPG">
-<img data-photo = "0013" src="https://portfolio.joshua-s.website/Media/Level_3_Interactive_Media/Image/photography/Thumbnail/0013.JPG">
-<img data-photo = "0014" src="https://portfolio.joshua-s.website/Media/Level_3_Interactive_Media/Image/photography/Thumbnail/0014.JPG">
-<img data-photo = "0015" src="https://portfolio.joshua-s.website/Media/Level_3_Interactive_Media/Image/photography/Thumbnail/0015.JPG">
-<img data-photo = "0016" src="https://portfolio.joshua-s.website/Media/Level_3_Interactive_Media/Image/photography/Thumbnail/0016.JPG">
-<img data-photo = "0017" src="https://portfolio.joshua-s.website/Media/Level_3_Interactive_Media/Image/photography/Thumbnail/0017.JPG">
-<img data-photo = "0018" src="https://portfolio.joshua-s.website/Media/Level_3_Interactive_Media/Image/photography/Thumbnail/0018.JPG">
-<img data-photo = "0019" src="https://portfolio.joshua-s.website/Media/Level_3_Interactive_Media/Image/photography/Thumbnail/0019.JPG">
-<img data-photo = "0020" src="https://portfolio.joshua-s.website/Media/Level_3_Interactive_Media/Image/photography/Thumbnail/0020.JPG">
-<img data-photo = "0021" src="https://portfolio.joshua-s.website/Media/Level_3_Interactive_Media/Image/photography/Thumbnail/0021.JPG">
-<img data-photo = "0022" src="https://portfolio.joshua-s.website/Media/Level_3_Interactive_Media/Image/photography/Thumbnail/0022.JPG">
-<img data-photo = "0023" src="https://portfolio.joshua-s.website/Media/Level_3_Interactive_Media/Image/photography/Thumbnail/0023.JPG">
-<img data-photo = "0024" src="https://portfolio.joshua-s.website/Media/Level_3_Interactive_Media/Image/photography/Thumbnail/0024.JPG">
-<img data-photo = "0025" src="https://portfolio.joshua-s.website/Media/Level_3_Interactive_Media/Image/photography/Thumbnail/0025.JPG">
-<img data-photo = "0026" src="https://portfolio.joshua-s.website/Media/Level_3_Interactive_Media/Image/photography/Thumbnail/0026.JPG">
-<img data-photo = "0027" src="https://portfolio.joshua-s.website/Media/Level_3_Interactive_Media/Image/photography/Thumbnail/0027.JPG">
-<img data-photo = "0028" src="https://portfolio.joshua-s.website/Media/Level_3_Interactive_Media/Image/photography/Thumbnail/0028.JPG">
-<img data-photo = "0029" src="https://portfolio.joshua-s.website/Media/Level_3_Interactive_Media/Image/photography/Thumbnail/0029.JPG">
-<img data-photo = "0030" src="https://portfolio.joshua-s.website/Media/Level_3_Interactive_Media/Image/photography/Thumbnail/0030.JPG">
-<img data-photo = "0031" src="https://portfolio.joshua-s.website/Media/Level_3_Interactive_Media/Image/photography/Thumbnail/0031.JPG">
-<img data-photo = "0032" src="https://portfolio.joshua-s.website/Media/Level_3_Interactive_Media/Image/photography/Thumbnail/0032.JPG">
-<img data-photo = "0033" src="https://portfolio.joshua-s.website/Media/Level_3_Interactive_Media/Image/photography/Thumbnail/0033.JPG">
+<img data-photo = "0001" data-src="https://portfolio.joshua-s.website/Media/Level_3_Interactive_Media/Image/photography/Thumbnail/0001.JPG"><p id = "loadingIndicate">Loading<img src = "css/loading.gif"></p>
+<img data-photo = "0002" data-src="https://portfolio.joshua-s.website/Media/Level_3_Interactive_Media/Image/photography/Thumbnail/0002.JPG"><p id = "loadingIndicate">Loading<img src = "css/loading.gif"></p>
+<img data-photo = "0003" data-src="https://portfolio.joshua-s.website/Media/Level_3_Interactive_Media/Image/photography/Thumbnail/0003.JPG"><p id = "loadingIndicate">Loading<img src = "css/loading.gif"></p>
+<img data-photo = "0004" data-src="https://portfolio.joshua-s.website/Media/Level_3_Interactive_Media/Image/photography/Thumbnail/0004.JPG"><p id = "loadingIndicate">Loading<img src = "css/loading.gif"></p>
+<img data-photo = "0005" data-src="https://portfolio.joshua-s.website/Media/Level_3_Interactive_Media/Image/photography/Thumbnail/0005.JPG"><p id = "loadingIndicate">Loading<img src = "css/loading.gif"></p>
+<img data-photo = "0006" data-src="https://portfolio.joshua-s.website/Media/Level_3_Interactive_Media/Image/photography/Thumbnail/0006.JPG"><p id = "loadingIndicate">Loading<img src = "css/loading.gif"></p>
+<img data-photo = "0007" data-src="https://portfolio.joshua-s.website/Media/Level_3_Interactive_Media/Image/photography/Thumbnail/0007.JPG"><p id = "loadingIndicate">Loading<img src = "css/loading.gif"></p>
+<img data-photo = "0008" data-src="https://portfolio.joshua-s.website/Media/Level_3_Interactive_Media/Image/photography/Thumbnail/0008.JPG"><p id = "loadingIndicate">Loading<img src = "css/loading.gif"></p>
+<img data-photo = "0009" data-src="https://portfolio.joshua-s.website/Media/Level_3_Interactive_Media/Image/photography/Thumbnail/0009.JPG"><p id = "loadingIndicate">Loading<img src = "css/loading.gif"></p>
+<img data-photo = "0010" data-src="https://portfolio.joshua-s.website/Media/Level_3_Interactive_Media/Image/photography/Thumbnail/0010.JPG"><p id = "loadingIndicate">Loading<img src = "css/loading.gif"></p>
+<img data-photo = "0011" data-src="https://portfolio.joshua-s.website/Media/Level_3_Interactive_Media/Image/photography/Thumbnail/0011.JPG"><p id = "loadingIndicate">Loading<img src = "css/loading.gif"></p>
+<img data-photo = "0012" data-src="https://portfolio.joshua-s.website/Media/Level_3_Interactive_Media/Image/photography/Thumbnail/0012.JPG"><p id = "loadingIndicate">Loading<img src = "css/loading.gif"></p>
+<img data-photo = "0013" data-src="https://portfolio.joshua-s.website/Media/Level_3_Interactive_Media/Image/photography/Thumbnail/0013.JPG"><p id = "loadingIndicate">Loading<img src = "css/loading.gif"></p>
+<img data-photo = "0014" data-src="https://portfolio.joshua-s.website/Media/Level_3_Interactive_Media/Image/photography/Thumbnail/0014.JPG"><p id = "loadingIndicate">Loading<img src = "css/loading.gif"></p>
+<img data-photo = "0015" data-src="https://portfolio.joshua-s.website/Media/Level_3_Interactive_Media/Image/photography/Thumbnail/0015.JPG"><p id = "loadingIndicate">Loading<img src = "css/loading.gif"></p>
+<img data-photo = "0016" data-src="https://portfolio.joshua-s.website/Media/Level_3_Interactive_Media/Image/photography/Thumbnail/0016.JPG"><p id = "loadingIndicate">Loading<img src = "css/loading.gif"></p>
+<img data-photo = "0017" data-src="https://portfolio.joshua-s.website/Media/Level_3_Interactive_Media/Image/photography/Thumbnail/0017.JPG"><p id = "loadingIndicate">Loading<img src = "css/loading.gif"></p>
+<img data-photo = "0018" data-src="https://portfolio.joshua-s.website/Media/Level_3_Interactive_Media/Image/photography/Thumbnail/0018.JPG"><p id = "loadingIndicate">Loading<img src = "css/loading.gif"></p>
+<img data-photo = "0019" data-src="https://portfolio.joshua-s.website/Media/Level_3_Interactive_Media/Image/photography/Thumbnail/0019.JPG"><p id = "loadingIndicate">Loading<img src = "css/loading.gif"></p>
+<img data-photo = "0020" data-src="https://portfolio.joshua-s.website/Media/Level_3_Interactive_Media/Image/photography/Thumbnail/0020.JPG"><p id = "loadingIndicate">Loading<img src = "css/loading.gif"></p>
+<img data-photo = "0021" data-src="https://portfolio.joshua-s.website/Media/Level_3_Interactive_Media/Image/photography/Thumbnail/0021.JPG"><p id = "loadingIndicate">Loading<img src = "css/loading.gif"></p>
+<img data-photo = "0022" data-src="https://portfolio.joshua-s.website/Media/Level_3_Interactive_Media/Image/photography/Thumbnail/0022.JPG"><p id = "loadingIndicate">Loading<img src = "css/loading.gif"></p>
+<img data-photo = "0023" data-src="https://portfolio.joshua-s.website/Media/Level_3_Interactive_Media/Image/photography/Thumbnail/0023.JPG"><p id = "loadingIndicate">Loading<img src = "css/loading.gif"></p>
+<img data-photo = "0024" data-src="https://portfolio.joshua-s.website/Media/Level_3_Interactive_Media/Image/photography/Thumbnail/0024.JPG"><p id = "loadingIndicate">Loading<img src = "css/loading.gif"></p>
+<img data-photo = "0025" data-src="https://portfolio.joshua-s.website/Media/Level_3_Interactive_Media/Image/photography/Thumbnail/0025.JPG"><p id = "loadingIndicate">Loading<img src = "css/loading.gif"></p>
+<img data-photo = "0026" data-src="https://portfolio.joshua-s.website/Media/Level_3_Interactive_Media/Image/photography/Thumbnail/0026.JPG"><p id = "loadingIndicate">Loading<img src = "css/loading.gif"></p>
+<img data-photo = "0027" data-src="https://portfolio.joshua-s.website/Media/Level_3_Interactive_Media/Image/photography/Thumbnail/0027.JPG"><p id = "loadingIndicate">Loading<img src = "css/loading.gif"></p>
+<img data-photo = "0028" data-src="https://portfolio.joshua-s.website/Media/Level_3_Interactive_Media/Image/photography/Thumbnail/0028.JPG"><p id = "loadingIndicate">Loading<img src = "css/loading.gif"></p>
+<img data-photo = "0029" data-src="https://portfolio.joshua-s.website/Media/Level_3_Interactive_Media/Image/photography/Thumbnail/0029.JPG"><p id = "loadingIndicate">Loading<img src = "css/loading.gif"></p>
+<img data-photo = "0030" data-src="https://portfolio.joshua-s.website/Media/Level_3_Interactive_Media/Image/photography/Thumbnail/0030.JPG"><p id = "loadingIndicate">Loading<img src = "css/loading.gif"></p>
+<img data-photo = "0031" data-src="https://portfolio.joshua-s.website/Media/Level_3_Interactive_Media/Image/photography/Thumbnail/0031.JPG"><p id = "loadingIndicate">Loading<img src = "css/loading.gif"></p>
+<img data-photo = "0032" data-src="https://portfolio.joshua-s.website/Media/Level_3_Interactive_Media/Image/photography/Thumbnail/0032.JPG"><p id = "loadingIndicate">Loading<img src = "css/loading.gif"></p>
+<img data-photo = "0033" data-src="https://portfolio.joshua-s.website/Media/Level_3_Interactive_Media/Image/photography/Thumbnail/0033.JPG"><p id = "loadingIndicate">Loading<img src = "css/loading.gif"></p>
   </div>
 </article>
