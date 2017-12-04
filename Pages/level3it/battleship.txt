@@ -10,7 +10,7 @@
     <li>Uses <a href = "http://espeak.sourceforge.net/">espeak</a> for voice synthesis</li>
     <figure>
       <img data-src="https://portfolio.joshua-s.website/Media/Level_3_IT/Image/battleship/1.png">
-      <p id = "loadingIndicate">Loading<img src = "css/loading.gif">
+      <p id = "loadingIndicate">Loading<img src = "css/loading.svg">
       <figcaption>Options screen. One of the main goals was for the program to be customisable</figcaption>
     </figure>
   </ul>

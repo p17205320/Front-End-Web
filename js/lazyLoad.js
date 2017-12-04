@@ -16,6 +16,6 @@ function lazyLoad() {
 
       };
     });
-
+// removes the event listener as it is no longer needed.
   document.removeEventListener("DOMNodeInserted", lazyLoad);
 }
