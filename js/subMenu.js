@@ -24,29 +24,29 @@
       
 
       hideAll();
-      document.getElementById("mainButtonContain1").style.display = "Flex";
-      document.getElementById("mainButtonContain1").classList.add("transition");
+      loadContent("Pages/buttons/level3media.txt");
+      pageTransition();
 
     }else if (e.target.dataset.menuitem === "level3IT") {
       
 
       hideAll();
-      document.getElementById("mainButtonContain2").style.display = "Flex";
-      document.getElementById("mainButtonContain2").classList.add("transition");
+      loadContent("Pages/buttons/level3it.txt");
+      pageTransition();
 
     }else if (e.target.dataset.menuitem === "HNDIT") {
       
 
       hideAll();
-      document.getElementById("mainButtonContain3").style.display = "Flex";
-      document.getElementById("mainButtonContain3").classList.add("transition");
+      loadContent("Pages/buttons/hndcomputing.txt");
+      pageTransition();
 
     }else if (e.target.dataset.menuitem === "other") {
       
 
       hideAll();
-      document.getElementById("mainButtonContain4").style.display = "Flex";
-      document.getElementById("mainButtonContain4").classList.add("transition");
+      loadContent("Pages/buttons/other.txt");
+      pageTransition();
 
     } else if (e.target.dataset.menuitem === "homePage") {
       
@@ -116,7 +116,7 @@
     } else if (e.target.dataset.button === "photography") {
       hideAll();
       subMenuHide();
-      loadContent("Pages/level3media/photography.txt");
+      loadContent("Pages/level3media.txt/photography.txt");
       pageTransition();
       document.addEventListener("DOMNodeInserted", photo);
 
@@ -143,10 +143,6 @@
     subMenu.innerHTML="";
   }
   function hideAll() {
-    document.getElementById("mainButtonContain2").style.display = "None";
-    document.getElementById("mainButtonContain3").style.display = "None";
-    document.getElementById("mainButtonContain1").style.display = "None";
-    document.getElementById("mainButtonContain4").style.display = "None";
     pageLoadContent.style.display = "None";
     pageLoadContent.innerHTML = "";
   }
