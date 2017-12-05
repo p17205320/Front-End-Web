@@ -190,8 +190,4 @@ main {
     /*height set due to bug in chrome*/
     height: 100%;
   }
-  #loadingIndicate > img {
-    width:  20px;
-    height: 20px;
-  }
 }
