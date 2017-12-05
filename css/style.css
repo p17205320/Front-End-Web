@@ -113,11 +113,7 @@ img[data-src] {
 main h1, h2 {
   text-align: center;
 }
-#mainButtonContain1, #mainButtonContain2, #mainButtonContain3, #mainButtonContain4 {
-  display: none;
-  flex-flow: row wrap;
-  justify-content: space-around;
-}
+
 .mainButton img {
   filter: grayscale(100%);
   transition: all 0.3s ease;
@@ -141,9 +137,6 @@ video {
   max-width: 100%;
 }
 
-#pageLoad {
-  text-align: center;
-}
 
 .transition {
   animation: transitionIn 0.5s 1 ease-in-out;
@@ -153,6 +146,10 @@ video {
 main {
   background: white;
   padding: 1em;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  display: flex;
+  text-align: center;
 
 }
 

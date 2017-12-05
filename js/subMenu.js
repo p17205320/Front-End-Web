@@ -5,7 +5,6 @@
   console.log(subMenu);
   let mainContent = document.getElementById("mainContent");
   console.log(mainContent);
-  let pageLoadContent = document.getElementById("pageLoad");
 
   document.addEventListener("click",  function(e)
   {
@@ -133,7 +132,7 @@
     var xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function() {
       if (this.readyState == 4 && this.status == 200) {
-        pageLoadContent.innerHTML = this.responseText;
+        mainContent.innerHTML = this.responseText;
       }
     };
     xhttp.open("GET", e, true);
@@ -143,13 +142,13 @@
     subMenu.innerHTML="";
   }
   function hideAll() {
-    pageLoadContent.style.display = "None";
-    pageLoadContent.innerHTML = "";
+    mainContent.style.display = "None";
+    mainContent.innerHTML = "";
   }
   
   function pageTransition() {
-    pageLoadContent.style.display = "Block";
-    pageLoadContent.classList.add("transition");
+    mainContent.style.display = "Block";
+    mainContent.classList.add("transition");
   }
   function pageLoad (e) {
     pageTransition();
