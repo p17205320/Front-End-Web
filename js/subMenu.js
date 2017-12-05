@@ -5,7 +5,6 @@
   console.log(subMenu);
   let mainContent = document.getElementById("mainContent");
   console.log(mainContent);
-  let pageLoadContent = document.getElementById("pageLoad");
 
   document.addEventListener("click",  function(e)
   {
@@ -17,107 +16,84 @@
         "  <button  data-menuItem = 'other'> Other</button>";
       subMenu.classList.add("transition");
     } else if (e.target.dataset.menuitem === "aboutMe") {
-      hideAll();
+      
       loadContent("Pages/other/aboutme.txt");
-      pageTransition();
     } else if (e.target.dataset.menuitem === "level3Media") {
       
-
-      hideAll();
-      document.getElementById("mainButtonContain1").style.display = "Flex";
-      document.getElementById("mainButtonContain1").classList.add("transition");
-
+      loadContent("Pages/buttons/level3media.txt");
     }else if (e.target.dataset.menuitem === "level3IT") {
       
-
-      hideAll();
-      document.getElementById("mainButtonContain2").style.display = "Flex";
-      document.getElementById("mainButtonContain2").classList.add("transition");
-
+      loadContent("Pages/buttons/level3it.txt");
     }else if (e.target.dataset.menuitem === "HNDIT") {
       
-
-      hideAll();
-      document.getElementById("mainButtonContain3").style.display = "Flex";
-      document.getElementById("mainButtonContain3").classList.add("transition");
-
+      loadContent("Pages/buttons/hndcomputing.txt");
     }else if (e.target.dataset.menuitem === "other") {
       
-
-      hideAll();
-      document.getElementById("mainButtonContain4").style.display = "Flex";
-      document.getElementById("mainButtonContain4").classList.add("transition");
-
+      loadContent("Pages/buttons/other.txt");
     } else if (e.target.dataset.menuitem === "homePage") {
       
-
-      hideAll();
       loadContent("Pages/other/homepage.txt");
-
-      pageTransition();
-
-      
     }
     if (e.target.dataset.button === "none") {
-      hideAll();
+      
       subMenuHide();
       loadContent("Pages/level3media/none.txt");
-      pageTransition();
+      
     } else if (e.target.dataset.button === "robotsTrip") {
-      hideAll();
+      
       subMenuHide();
       loadContent("Pages/level3media/robotstrip.txt");
-      pageTransition();
+      
     } else if (e.target.dataset.button === "battleship") {
-      hideAll();
+      
       subMenuHide();
       loadContent("Pages/level3it/battleship.txt");
-      pageTransition();
+      
     } else if (e.target.dataset.button === "monsta") {
-      hideAll();
+      
       subMenuHide();
       loadContent("Pages/level3it/monsta.txt");
-      pageTransition();
+      
     } else if (e.target.dataset.button === "ncsVideo") {
-      hideAll();
+      
       subMenuHide();
       loadContent("Pages/level3it/ncsvideo.txt");
-      pageTransition();
+      
     } else if (e.target.dataset.button === "stoningCyprus") {
-      hideAll();
+      
       subMenuHide();
       loadContent("Pages/level3it/stoningcyprus.txt");
-      pageTransition();
+      
     } else if (e.target.dataset.button === "cicVideo") {
-      hideAll();
+      
       subMenuHide();
       loadContent("Pages/hndcomputing/cicvideo.txt");
-      pageTransition();
+      
     } else if (e.target.dataset.button === "stamfordVideo") {
-      hideAll();
+      
       subMenuHide();
       loadContent("Pages/hndcomputing/stamfordhistory.txt");
-      pageTransition();
+      
     } else if (e.target.dataset.button === "snek") {
-      hideAll();
+      
       subMenuHide();
       loadContent("Pages/hndcomputing/snek.txt");
-      pageTransition();
+      
     } else if (e.target.dataset.button === "xonarSystems") {
-      hideAll();
+      
       subMenuHide();
       loadContent("Pages/hndcomputing/xonarsystems.txt");
-      pageTransition();
+      
     } else if (e.target.dataset.button === "grantham") {
-      hideAll();
+      
       subMenuHide();
       loadContent("Pages/other/grantham.txt");
-      pageTransition();
+      
     } else if (e.target.dataset.button === "photography") {
-      hideAll();
+      
       subMenuHide();
-      loadContent("Pages/level3media/photography.txt");
-      pageTransition();
+      loadContent("Pages/level3media.txt/photography.txt");
+      
       document.addEventListener("DOMNodeInserted", photo);
 
     }
@@ -130,10 +106,12 @@
   });
 
   function loadContent(e) {
-    var xhttp = new XMLHttpRequest();
+    let xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function() {
       if (this.readyState == 4 && this.status == 200) {
-        pageLoadContent.innerHTML = this.responseText;
+        hideAll();
+        mainContent.innerHTML = this.responseText;
+        pageTransition();
       }
     };
     xhttp.open("GET", e, true);
@@ -143,22 +121,15 @@
     subMenu.innerHTML="";
   }
   function hideAll() {
-    document.getElementById("mainButtonContain2").style.display = "None";
-    document.getElementById("mainButtonContain3").style.display = "None";
-    document.getElementById("mainButtonContain1").style.display = "None";
-    document.getElementById("mainButtonContain4").style.display = "None";
-    pageLoadContent.style.display = "None";
-    pageLoadContent.innerHTML = "";
+    mainContent.style.display = "None";
+    mainContent.innerHTML = "";
+    mainContent.classList.remove("transition");
+
   }
   
   function pageTransition() {
-    pageLoadContent.style.display = "Block";
-    pageLoadContent.classList.add("transition");
-  }
-  function pageLoad (e) {
-    pageTransition();
-
-
+    mainContent.style.display = "Block";
+    mainContent.classList.add("transition");
   }
 
 

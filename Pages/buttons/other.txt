@@ -1,0 +1,1 @@
+<button  data-button = "grantham" class = "mainButton"> <img data-button = "grantham" data-src="https://portfolio.joshua-s.website/Media/Other/Button/Grantham.jpg" alt = "Xonar Systems Website"> <p id = 'loadingIndicate'>Loading<img src = 'css/loading.svg'></p><h1 data-button = "grantham">Grantham Doc</h1></button>
