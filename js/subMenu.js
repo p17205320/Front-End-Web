@@ -41,12 +41,9 @@
       //Hides the submenu
       subMenuHide();
       loadContent("Pages/level3media/none.txt");
-      
     } else if (e.target.dataset.button === "robotsTrip") {
-      
       subMenuHide();
       loadContent("Pages/level3media/robotstrip.txt");
-      
     } else if (e.target.dataset.button === "battleship") {
       
       subMenuHide();
