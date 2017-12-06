@@ -5,15 +5,11 @@ function lazyLoad() {
       img.setAttribute("src", img.getAttribute("data-src"));
 
       img.onload = function() {
-
         img.removeAttribute("data-src");
-        // Put in to make the console stop moaning at me
         //This is what i added to the function. It removes the loading indicator once the image is loaded
         if (img.nextElementSibling.id = "loadingIndicate") {
             img.nextElementSibling.remove();
-
         }
-
       };
     });
 // removes the event listener as it is no longer needed.
