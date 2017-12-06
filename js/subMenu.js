@@ -92,7 +92,7 @@
     } else if (e.target.dataset.button === "photography") {
       
       subMenuHide();
-      loadContent("Pages/level3media.txt/photography.txt");
+      loadContent("Pages/level3media/photography.txt");
       
       document.addEventListener("DOMNodeInserted", photo);
 
