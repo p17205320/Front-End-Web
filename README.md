@@ -59,12 +59,24 @@ This meant that editing the page was a pain and the javascript became quite bloa
           }
 This makes adding new pages and modifying old pages much simpler
 
+Dropped Design Ideas
+==========
+ - Real time updating age counter on about me page
+ - Slideshow/slider function on the photography page
+
+Design Issues
+==========
+ - The website requires javascript to function so if a user doesn't want to use javascript ir can not use javascript then the website will not work
+ - The website uses mutation events which are deprecated for mutation observers. Mutation events could be dropped in browsers at any point and break the website
+ 
+
 Design Wireframe
 ==========
 ## Mobile
+![alt text](Design_Docs/1.png "Mobile/Vertical Wireframe")
 
 ## Desktop
-
+![alt text](Design_Docs/2.png "Desktop/Landscape Wireframe")
 
 References
 ==========
